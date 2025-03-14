@@ -5,7 +5,7 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bento Pro</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/application/assets/css/style.css" />
   </head>
   <body>
     <nav class="navbar">
@@ -65,6 +65,6 @@
       </div>
     </main>
 
-    <script type="module" src="main.js"></script>
+    <script type="module" src="/application/assets/js/main.js"></script>
   </body>
 </html>
