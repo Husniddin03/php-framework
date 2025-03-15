@@ -10,9 +10,9 @@ class Application
     {
         try {
             $url = $this->validate($_SERVER['REQUEST_URI']);
-            $parts = $this->isurl($url);
+            $parts = $this->isurl($url, $_SERVER['REQUEST_METHOD']);
 
-            $class = "application\controller\\" . $parts[0];
+            $class = $parts[0];
             if (!class_exists($class)) {
                 throw new Exception("Class $class not found");
             }
@@ -26,13 +26,15 @@ class Application
             echo $e->getMessage();
         }
     }
+
     public function validate($data)
     {
         return htmlspecialchars(trim($data));
     }
-    public function isurl($url)
+
+    public function isurl($url, $mrthod)
     {
         $path = trim($url);
-        return Roud::run($path);
+        return Roud::run($path, $mrthod);
     }
 }

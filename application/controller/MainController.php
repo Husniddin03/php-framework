@@ -10,8 +10,4 @@ class MainController extends Controller
     {
         return $this->view('main/index');
     }
-    public function about()
-    {
-        return $this->view('main/about');
-    }
 }

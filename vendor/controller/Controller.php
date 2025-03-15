@@ -10,3 +10,6 @@ class Controller
         require "application/view/$path.php";
     }
 }
+
+
+
