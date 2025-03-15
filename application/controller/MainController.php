@@ -12,6 +12,6 @@ class MainController extends Controller
     }
     public function about()
     {
-        echo "About us";
+        return $this->view('main/about');
     }
 }

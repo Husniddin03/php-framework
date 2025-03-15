@@ -7,6 +7,6 @@ class Controller
     public function view($path, $data = [])
     {
         extract($data);
-        include "application/view/$path.php";
+        require "application/view/$path.php";
     }
 }
