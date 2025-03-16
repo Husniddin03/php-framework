@@ -6,6 +6,6 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Lorem ipsum dolor sit <a href="">amet</a> consectetur adipisicing elit. Distinctio soluta quas quidem.</h1>
+    <h1>Lorem ipsum dolor sit <a href=""><?=$get?></a> consectetur adipisicing elit. Distinctio soluta quas quidem.</h1>
 </body>
 </html>

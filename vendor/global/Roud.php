@@ -17,11 +17,6 @@ class Roud
 
     public static function get($path, $dataGET)
     {
-        if(strpos($path, '?') == true) {
-            $items = explode('?', $path);
-            $path = $items[0];
-            Get::$data = explode('&', $items[1]);
-        }
         $url = $dataGET[0] . '/' . $dataGET[1];
         self::$dataGET[$path] = $url;
     }

@@ -3,6 +3,7 @@
 namespace vendor\global;
 
 use Exception;
+use vendor\HTTP\Get;
 
 class Application
 {
@@ -29,7 +30,19 @@ class Application
 
     public function validate($data)
     {
-        return htmlspecialchars(trim($data));
+        $data = htmlspecialchars(trim($data));
+        if(strpos($data, '?') !== false) {
+            $items = explode('?', $data);
+            $data = $items[0];
+            $item = explode('&', $items[1]);
+            $arr = [];
+            foreach ($item as $value) {
+                $value = explode('=', $value);
+                $arr[$value[0]] = $value[1];
+            }
+            Get::$data = $arr;
+        }
+        return $data;
     }
 
     public function isurl($url, $mrthod)
