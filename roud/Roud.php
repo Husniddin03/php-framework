@@ -11,3 +11,5 @@ Roud::get('main/about', [MainController::class, 'about']);
 Roud::get('main/index', [MainController::class, 'index']);
 
 Roud::get('log/index', [LogController::class, 'index']);
+Roud::get('log/login', [LogController::class, 'login']);
+Roud::get('log/register', [LogController::class, 'register']);

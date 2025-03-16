@@ -6,6 +6,9 @@ use database\Database;
 
 abstract class Model extends Database
 {
+
+    use \vendor\model\Request;
+
     protected static $table = null;
     protected static $conn = null;
 
@@ -57,7 +60,7 @@ abstract class Model extends Database
     public static function findName($column, $name)
     {
         self::check();
-
+        
         $stmt = self::$conn->prepare("SELECT * FROM " . static::$table . " WHERE $column = :name");
         $stmt->bindParam('name', $name);
         $stmt->execute();
