@@ -8,7 +8,7 @@ class LogController extends Controller
 {
     public function index()
     {
-        return $this->view('log/index');
+        return $this->view('log/index', ['direct' => $this->get('direct')]);
     }
     public function login()
     {

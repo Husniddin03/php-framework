@@ -1,6 +1,6 @@
 <div class="form-container">
     <h1>Create an account</h1>
-    <p class="login-text">Already have an account? <a href="#">Log in</a></p>
+    <p class="login-text">Already have an account? <a href="?direct=login">Log in</a></p>
 
     <form id="signup-form">
         <div class="input-group">

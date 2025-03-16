@@ -4,6 +4,8 @@ namespace vendor\controller;
 
 class Controller
 {
+    use \vendor\HTTP\HTTPController;
+    
     public function view($path, $data = [])
     {
         extract($data);
@@ -13,5 +15,6 @@ class Controller
     public function redirect($path)
     {
         header("Location: $path");
+        exit();
     }
 }

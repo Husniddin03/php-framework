@@ -23,13 +23,7 @@
             </div>
         </div>
         <div class="right-section">
-            <div class="form-container">
-                <h1>Create an account</h1>
-                <p class="login-text">Already have an account? <a href="#">Log in</a></p>
-
-                <?= $this->view('log/register') ?>
-
-            </div>
+            <?= $this->view("log/" . ($direct ?? "register")) ?>
         </div>
     </div>
 </body>
