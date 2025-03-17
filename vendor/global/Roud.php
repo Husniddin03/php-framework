@@ -12,7 +12,7 @@ class Roud
     public static function post($path, $dataPOST)
     {
         $url = $dataPOST[0] . '/' . $dataPOST[1];
-        self::$dataGET[$path] = $url;
+        self::$dataPOST[$path] = $url;
     }
 
     public static function get($path, $dataGET)
@@ -39,14 +39,14 @@ class Roud
             if (array_key_exists($path, self::$dataGET)) {
                 return explode('/', self::$dataGET[$path]);
             } else {
-                echo "Error 404";
+                echo "Error 404: GET method not found";
                 die();
             }
         } else if ($method == 'POST') {
             if (array_key_exists($path, self::$dataPOST)) {
                 return explode('/', self::$dataPOST[$path]);
             } else {
-                echo "Error 404";
+                echo "Error 404: POST method not found";
                 die();
             }
         } else {

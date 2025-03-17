@@ -12,4 +12,12 @@ trait HTTPController
             return $_GET[$name] ?? null;
         }
     }
+    public function post($name = null)
+    {
+        if ($name === null) {
+            return $_POST;
+        } else {
+            return $_POST[$name] ?? null;
+        }
+    }
 }

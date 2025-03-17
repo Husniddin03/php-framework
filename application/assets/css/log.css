@@ -116,6 +116,14 @@ body {
   flex-direction: column;
 }
 
+#login{
+  display: none;
+}
+
+.pointer{
+  cursor: pointer;
+}
+
 .form-container {
   max-width: 400px;
   margin: 0 auto;
@@ -194,38 +202,6 @@ input::placeholder {
 
 .toggle-password:hover {
   opacity: 1;
-}
-
-.checkbox-group {
-  margin: 24px 0;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.checkbox-group input[type='checkbox'] {
-  width: 18px;
-  height: 18px;
-  border-radius: 4px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  background: var(--input-bg);
-  cursor: pointer;
-}
-
-.checkbox-group label {
-  color: #9ca3af;
-  font-size: 14px;
-  user-select: none;
-}
-
-.checkbox-group a {
-  color: var(--primary-color);
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.checkbox-group a:hover {
-  text-decoration: underline;
 }
 
 .submit-btn {
