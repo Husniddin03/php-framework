@@ -2,33 +2,13 @@
 
 namespace vendor\model;
 
-use database\Database;
-
-abstract class Model extends Database
+abstract class Model 
 {
-
-    use \vendor\model\Request;
-    use \vendor\model\Validate;
+    use \database\Database;
+    
+    use Request, Validate;
 
     protected static $table = null;
-    protected static $conn = null;
-
-    public static function getConnaction()
-    {
-        if (!isset(self::$conn)) {
-            try {
-                $db = self::getDBCredentials();
-                self::$conn = new \PDO(
-                    "mysql:host=" . $db['hostname'] . ";dbname=" . $db['dbname'],
-                    $db['username'],
-                    $db['password']
-                );
-                self::$conn->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
-            } catch (\PDOException $e) {
-                die($e->getMessage());
-            }
-        }
-    }
 
     private static function check()
     {
@@ -81,7 +61,7 @@ abstract class Model extends Database
         $stmt->execute(array_values($data));
     }
 
-    public static function delete($id)
+     public static function delete($id)
     {
         $stmt = self::$conn->prepare("DELETE FROM " . static::$table . " WHERE id = " . $id);
         $stmt->execute();
