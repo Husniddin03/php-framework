@@ -2,13 +2,31 @@
 
 namespace vendor\model;
 
-abstract class Model
+use database\Database;
+
+abstract class Model extends Database
 {
-    use \database\Database;
 
     use Request, Validate;
     protected static $table = null;
+    protected static $conn = null;
 
+    public static function getConnaction()
+    {
+        if (!isset(self::$conn)) {
+            try {
+                $db = self::getDBCredentials();
+                self::$conn = new \PDO(
+                    "mysql:host=" . $db['hostname'] . ";dbname=" . $db['dbname'],
+                    $db['username'],
+                    $db['password']
+                );
+                self::$conn->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
+            } catch (\PDOException $e) {
+                die($e->getMessage());
+            }
+        }
+    }
     public static function tableName()
     {
         return static::$table ?? strtolower(static::class);
@@ -78,5 +96,12 @@ abstract class Model
         $stmt->bindParam(":value", $value, \PDO::PARAM_STR);
         $stmt->execute();
         return $stmt->fetch(\PDO::FETCH_OBJ);
+    }
+
+    public static function get()
+    {
+        $stmt = self::$conn->prepare("\"".self::query()."\"");
+        $stmt->execute();
+        return $stmt->fetchAll(\PDO::FETCH_OBJ);
     }
 }

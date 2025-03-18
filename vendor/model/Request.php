@@ -79,7 +79,7 @@ trait Request
         return new static;
     }
 
-    public static function get()
+    public static function query()
     {
         $query = implode(' ', array_filter(self::$params));
         return $query;

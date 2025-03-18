@@ -9,6 +9,8 @@ class MainController extends Controller
 {
     public function index()
     {
+        print_r(User::select('name')->where('id=14')->get());
+        die();
         return $this->view('main/index');
     }
 }
