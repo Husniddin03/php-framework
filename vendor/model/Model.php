@@ -2,13 +2,18 @@
 
 namespace vendor\model;
 
-abstract class Model 
+abstract class Model
 {
     use \database\Database;
-    
-    use Request, Validate;
 
+    use Request, Validate;
     protected static $table = null;
+
+    public static function tableName()
+    {
+        return static::$table ?? strtolower(static::class);
+    }
+
 
     private static function check()
     {
@@ -41,7 +46,7 @@ abstract class Model
     public static function findName($column, $name)
     {
         self::check();
-        
+
         $stmt = self::$conn->prepare("SELECT * FROM " . static::$table . " WHERE $column = :name");
         $stmt->bindParam('name', $name);
         $stmt->execute();
@@ -61,17 +66,17 @@ abstract class Model
         $stmt->execute(array_values($data));
     }
 
-     public static function delete($id)
+    public static function delete($id)
     {
         $stmt = self::$conn->prepare("DELETE FROM " . static::$table . " WHERE id = " . $id);
         $stmt->execute();
     }
 
-    public static function where($column, $value)
+    public static function getwhere($column, $value)
     {
-        $stmt = self::$conn->prepare("SELECT * FROM " . static::$table . " WHERE $column = :value");
-        $stmt->bindParam('value', $value);
+        $stmt = self::$conn->prepare("SELECT * FROM " . static::$table . " WHERE " . $column . " = :value");
+        $stmt->bindParam(":value", $value, \PDO::PARAM_STR);
         $stmt->execute();
-        return $stmt->fetchAll(\PDO::FETCH_ASSOC);
+        return $stmt->fetch(\PDO::FETCH_OBJ);
     }
 }

@@ -19,7 +19,7 @@
       </div>
       <div class="nav-actions">
         <button class="search-btn">🔍</button>
-        <button class="sign-in-btn">Sign In</button>
+        <a href="/log/index" class="sign-in-btn">Sign In</a>
       </div>
     </nav>
 

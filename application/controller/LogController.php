@@ -15,18 +15,18 @@ class LogController extends Controller
     {
         User::validate(
             [
-                $this->post('name') => 'name|min:3',
+                $this->post('email') => 'email',
                 $this->post('password') => 'password|min:8|max:32',
             ]
         );
-        $user = User::where('email', $this->post('email'))->first();
+        $user = User::getwhere('email', $this->post('email'));
         if (!$user) {
-            return $this->redirect('/log/index?direct=error');
+            return $this->redirect('/log/index');
         }
         if (!password_verify($this->post('password'), $user->password)) {
-            return $this->redirect('/log/index?direct=error');
+            return $this->redirect('/log/index');
         }
-        return $this->redirect('/log/index');
+        return $this->redirect('/main/index');
     }
 
     public function register(){
