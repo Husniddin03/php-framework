@@ -2,7 +2,7 @@
 
 namespace database;
 
-abstract class Database
+class Database
 {
     public static function getDBCredentials()
     {

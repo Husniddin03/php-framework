@@ -2,13 +2,12 @@
 
 namespace application\controller;
 
-use application\model\User;
 use vendor\controller\Controller;
 
-class MainController extends Controller
+class QuizController extends Controller
 {
     public function index()
     {
-        return $this->view('main/index');
+        return $this->view('quiz/index');
     }
 }

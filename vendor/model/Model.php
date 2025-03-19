@@ -55,7 +55,6 @@ abstract class Model extends Database
     public static function findOne($id)
     {
         self::check();
-
         $stmt = self::$conn->prepare("SELECT * FROM " . static::$table . " WHERE id = " . $id);
         $stmt->execute();
         return $stmt->fetchAll(\PDO::FETCH_ASSOC);
@@ -64,7 +63,6 @@ abstract class Model extends Database
     public static function findName($column, $name)
     {
         self::check();
-
         $stmt = self::$conn->prepare("SELECT * FROM " . static::$table . " WHERE $column = :name");
         $stmt->bindParam('name', $name);
         $stmt->execute();
@@ -73,6 +71,7 @@ abstract class Model extends Database
 
     public static function create($data)
     {
+        self::check();
         $stmt = self::$conn->prepare("INSERT INTO " . static::$table . " (" . implode(',', array_keys($data)) . ") VALUES (" . implode(',', array_fill(0, count($data), '?')) . ")");
         $stmt->execute(array_values($data));
         return self::$conn->lastInsertId();
@@ -80,18 +79,21 @@ abstract class Model extends Database
 
     public static function update($id, $data)
     {
+        self::check();
         $stmt = self::$conn->prepare("UPDATE " . static::$table . " SET " . implode('=?,', array_keys($data)) . "=? WHERE id = " . $id);
         $stmt->execute(array_values($data));
     }
 
     public static function delete($id)
     {
+        self::check();
         $stmt = self::$conn->prepare("DELETE FROM " . static::$table . " WHERE id = " . $id);
         $stmt->execute();
     }
 
     public static function getwhere($column, $value)
     {
+        self::check();
         $stmt = self::$conn->prepare("SELECT * FROM " . static::$table . " WHERE " . $column . " = :value");
         $stmt->bindParam(":value", $value, \PDO::PARAM_STR);
         $stmt->execute();
@@ -100,7 +102,8 @@ abstract class Model extends Database
 
     public static function get()
     {
-        $stmt = self::$conn->prepare("\"".self::query()."\"");
+        self::check();
+        $stmt = self::$conn->prepare(self::query());
         $stmt->execute();
         return $stmt->fetchAll(\PDO::FETCH_OBJ);
     }
