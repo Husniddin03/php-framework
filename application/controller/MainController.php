@@ -2,8 +2,10 @@
 
 namespace application\controller;
 
-use application\model\User;
 use vendor\controller\Controller;
+use vendor\session\Session;
+
+Session::start();
 
 class MainController extends Controller
 {

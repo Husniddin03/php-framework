@@ -4,6 +4,9 @@ namespace application\controller;
 
 use application\model\User;
 use vendor\controller\Controller;
+use vendor\session\Session;
+
+Session::start();
 
 class LogController extends Controller
 {
@@ -26,10 +29,12 @@ class LogController extends Controller
         if (!password_verify($this->post('password'), $user->password)) {
             return $this->redirect('/log/index');
         }
+        Session::set('user_id', $user->id);
         return $this->redirect('/main/index');
     }
 
-    public function register(){
+    public function register()
+    {
         User::validate(
             [
                 $this->post('name') => 'name|min:3',
@@ -42,6 +47,7 @@ class LogController extends Controller
             'password' => password_hash($this->post('password'), PASSWORD_DEFAULT),
             'email' => $this->post('email'),
         ]);
+        Session::set('user_id', $user->id);
         return $this->redirect('/main/index');
     }
 }

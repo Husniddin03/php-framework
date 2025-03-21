@@ -1,0 +1,2060 @@
+﻿Tizimni xavfsiz rejimda ishlatish:
+====
+#minimal miqdordagi drayverlarni yuklaydi.
+====
+tizimni viruslardan himoya qiladi.
+====
+tizimni ma'lumotlarni yo'qotilishidan himoya qiladi.
+====
+ruxsatsiz kirishni oldini oladi.
+++++
+Sizning zaxira rejangiz har yakshanba kuni to'liq zaxiralashni talab qiladi. Haftaning har ikkinchi kunida, faqat oxirgi to'liq zaxiradan keyin kiritilgan o'zgarishlarning zaxira nusxasini yaratishingiz kerak. Seshanba kuni qaysi zaxira turini ishlatishingiz kerak?
+====
+#Diferensial
+====
+Har kuni
+====
+Oddiy
+====
+Nusxalash
+++++
+Yorug'lik yuz berganda serverni himoya qilish uchun siz quyidagilarni ishlatishingiz kerak:
+====
+#Uzluksiz quvvat manbai.
+====
+Maxsus kuchlanishni himoya qiluvchi.
+====
+Quvvat manbai.
+====
+ortiqcha elektr ta'minoti.
+++++
+Kompyuter tizimidagi muhim hodisa to'g'risida batafsil ma'lumot olish uchun qaysi vositadan foydalanasiz?
+====
+#Voqeani tomosha qiluvchi
+====
+Tizim haqida ma'lumot
+====
+tizim monitor
+====
+Resurs monitoring
+++++
+Power-On Self Test (POST) paytida qaysi vazifa bajariladi?
+====
+#Tizimning RAM miqdori aniqlanadi.
+====
+Master Boot Record yaratildi.
+====
+Operatsion tizim ishga tushirildi.
+====
+Disk fayl tizimlari aniqlandi.
+++++
+Birgalikdagi jildning oldingi versiyalarini saqlash uchun Volume Shadow Copy Service (VSS) ni sozlaysiz. Odatiy bo'lib, umumiy papkalarning nusxalari qanday nomlanadi?:
+====
+#Mahalliy jil
+====
+Tarmoqqa biriktirilgan saqlash (NAS) qurilmasi.
+====
+Tarqatilgan fayl tizimi (DFS) ulushi.
+====
+Ishdan bo'shatish klasteri.
+++++
+Qachon odatiy guruh siyosati birinchi navbatda tarmoq kompyuterlariga qo'llaniladi:
+====
+#Kompyuter ishga tushs
+====
+Kompyuterning zaxira nusxasi mavjud bo’lgand
+====
+Foydalanuvchi umumiy diskka kirish huquqini ols
+====
+Foydalanuvchi gpresult.exe faylini ishga tushirils
+++++
+ Ixtisoslashgan domen tekshiruvi vazifalarini bajarish uchun tayinlangan domen tekshiruvi odatda nima deb ataladi:
+====
+#Operations Master
+====
+Windows Internet Name Service (WINS) server
+====
+Organizational Unit
+====
+Primary domain controller
+++++
+Siz kompaniyaning Active Directory-ni boshqarasiz. Filial idorasini ma'murlar to'plamiga topshirishingiz kerak. Filialga tegishli foydalanuvchilar va kompyuterlarni qaerga joylashtirgan bo'lar edingiz?
+====
+#Tashkiliy bo'limda
+====
+Tarqatish guruhida
+====
+Domenning ildizida
+====
+Ichki konteynerda
+++++
+Resurslarga kirish uchun ruxsatlarni tayinlashingiz kerak.Siz qaysi guruh turidan foydalanishingiz kerak?
+====
+#Xavfsizlik guruhi
+====
+Ishchi guruh
+====
+Tashkiliy guruh
+====
+Tarqatish guruhi
+++++
+Siz ishchi guruhni boshqarasiz. Bosib chiqarish ma'murlari uchun guruh yaratishingiz kerak. Siz qaysi guruh turini yaratishingiz kerak?
+====
+#Local group
+====
+Domain Local group
+====
+Global group
+====
+Universal group
+====
+Bitta firmada turli domenlardan foydalanuvchilarni o'z ichiga olgan guruh yaratishingiz kerak. Shuningdek, siz guruhga firmadagi istalgan domendagi manbalarga kirish huquqini berishingiz kerak. Siz qaysi guruh turini yaratishingiz kerak?
+====
+#Universal group
+====
+Workgroup
+====
+Local group
+====
+Global group
+++++
+Siz boshqa firmada joylashgan manbalarga kirishingiz kerak.Qaysi birini yaratishingiz kerak?
+====
+#Organizational unit
+====
+Child domain
+====
+Distribution group
+====
+Trust
+++++
+Foydalanuvchilar chop etish imkoniyati yo'qligi haqida xabar berishadi. Siz bosma biriktiruvchi xizmati ishlayotganligini tasdiqlaysiz. Keyin nima qilishingiz kerak?
+====
+#Xizmatni qayta yoqish
+====
+Xizmatni tozalash
+====
+Xizmatni o'chirib qo'yish
+====
+Xizmatni pauza qilish
+++++
+Siz Windows Server 2012-ni bir nechta serverlarga o'rnatishni avtomatlashtirishingiz kerak.Siz nimadan foydalanishingiz kerak?
+====
+#Windows Deployment Services (WDS)
+====
+unattendinstall.exe
+====
+Microsoft Software Installer (MSI)
+====
+Windows Installer Service
+++++
+Plug and Play quyidagicha:
+====
+#Qurilmani avtomatik sozlash tizimi.
+====
+Avtomatik tizimni yangilash dasturi.
+====
+Ilovalar yaratish uchun ishlab chiquvchilar tomonidan qo'llaniladigan usul.
+====
+Multimedia qurilmasi.
+++++
+TCP / IP ulanishini sozlash uchun qaysi ikkita komponent talab qilinadi? (Ikkisini tanlang)
+====
+#Subnet mask, DHCP address
+====
+Host address, . Domain name
+====
+Host address, Subnet mask
+====
+Domain name, Subnet mask
+++++
+Windows serverida qaysi faylni saqlash tizimidan foydalanish mumkin?
+====
+#NTFS
+====
+NFS
+====
+EXT3
+====
+FAT16
+++++
+Sahifa fayliga tez-tez yozib borishini sababini aniqlash uchun qaysi birini kuzatishingiz kerak?
+====
+#RAM
+====
+CPU
+====
+Network
+====
+Hard disk
+++++
+Sizning serveringiz protsessori 80 foiz foydalanish darajasidan oshib ketganda siz xabarnoma olishni xohlaysiz. Siz quyidagilarni yaratishingiz kerak:
+====
+#Performance Alert.
+====
+Scheduled task.
+====
+Performance Log.
+====
+System Event.
+++++
+Siz server ish faoliyatini kuzatib borishingiz kerak. Buning uchun avval nimani yaratishingiz kerak?
+====
+#Baseline
+====
+Counters
+====
+Page File
+====
+Alerts
+++++
+Hyper-V o'rnatilishi mumkin bo'lgan minimal Windows Server versiyasi qanday?
+====
+#2008 yil 64-bit
+====
+2003 yil 32-bit
+====
+2003 yil 64-bit
+====
+2008 yil 32-bit
+++++
+HTTPS uchun standart port qaysi?
+====
+#443
+====
+21
+====
+80
+====
+135
+++++
+Hyper-V virtual mashinasi uchun yaxshilangan klaviatura va sichqoncha funktsiyalarini yoqish uchun quyidagilardan qaysi birini o'rnatishingiz kerak:
+====
+#Hyper-V Integration Components.
+====
+Keyboard and mouse drivers.
+====
+Microsoft Updates.
+====
+Hyper-V Server.
+++++
+Siz manbani yashirin qilishingiz kerak. Qaysi belgini manba nomiga qo'shishingiz kerak?
+====
+#$
+====
+!
+====
+@
+====
+#
+++++
+Ilovaga masofadan ulanish uchun qaysi turdagi litsenziya talab qilinadi?
+====
+#Remote Desktop Services Client Access License
+====
+Windows Server External Connector License
+====
+System Center Operations Manager Client Management License
+====
+Remote Server Application License
+++++
+Taqvimlarni, kontaktlarni va elektron pochtani serverda joylashtirish uchun qaysi texnologiya yaratilgan?
+====
+#Microsoft Exchange Server
+====
+Microsoft Host Integration Server
+====
+Microsoft Expression Studio
+====
+Microsoft SQL Server
+++++
+Xavfsiz veb-sayt qonuniyligini tekshirish uchun qaysi biri ishlatiladi?
+====
+#Digital certificate
+====
+Active Directory
+====
+Enterprise trust
+====
+Private key
+++++
+Ilovani virtualizatsiya qilishning afzalliklaridan biri:
+====
+#Mijozlarning ma'muriy xarajatlari kamayadi.
+====
+Operatsion tizimning kamroq yangilanishi.
+====
+Hamkorlik yaxshilandi.
+====
+Tarmoq trafigi kamayadi.
+++++
+Qaysi turdagi papka ruxsatnomalari birinchi o'ringa ega?
+====
+#Aniq rad etish ruxsatnomalari
+====
+Ruxsat berishga aniq ruxsat berish
+====
+Meros qilib rad etish huquqlari
+====
+Merosxo'r Ruxsatlarga ruxsat berish
+++++
+O'zingizning serveringizni xuddi oldingizda o'tirgandek boshqarishida qaysi vositadan foydalanishingiz kerak?
+====
+#Remote Server Administration Tools
+====
+Remote Desktop Client
+====
+Remote Desktop Session Host
+====
+Remote Desktop Gateway
+++++
+Ovoz balandligini o'rnatish uchun nima talab qilinadi?
+====
+#An NTFS file system volume or partition
+====
+A dynamic disk
+====
+RAID 1 implementation
+====
+Extended volumes
+++++
+Tarqatilgan fayl tizimi (DFS) quyidagilar uchun ishlatiladi:
+====
+#Turli xil serverlardan umumiy papkalarni guruhlash.
+====
+Global tarqatish guruhiga ruxsat berish.
+====
+Paritetni amalga oshirish.
+====
+Uzaygan va kengaytirilgan hajmlarni sozlang.
+++++
+Qaysi RAID darajasi ikkita diskdan iborat bo'lishi va ortiqcha ish bilan ta'minlanishi mumkin?
+====
+#RAID 1
+====
+RAID 0
+====
+RAID 5
+====
+RAID 10
+++++
+O'z-o'zini ta'minlaydigan va fayl darajasida birgalikda foydalanishni ta'minlaydigan tashqi xotira birligi quyidagicha deyiladi.
+====
+#Network Attached Storage (NAS).
+====
+Small Computer System Interface (SCSI).
+====
+Storage Area Network (SAN).
+====
+Direct Attached Storage (DAS).
+++++
+Qaysi RAID darajasi disklar to'plamini aks ettiradi va keyin disklarni echib tashlaydi?
+====
+#RAID 10
+====
+RAID 0
+====
+RAID 1
+====
+RAID 5
+++++
+Diskni aks ettirish quyidagi hollarda sodir bo'ladi:
+====
+#Alohida disklarda takrorlangan.
+====
+Xuddi shu diskda nusxa ko'chirilgan.
+====
+Paritet yordamida zaxira nusxasini yaratdi.
+====
+Disklar o'rtasida bo'linish.
+++++
+SAN-ning afzalliklaridan biri shundaki:
+====
+#Serverlar uchun saqlash joyini birlashtiradi.
+====
+Server ichida yoki tashqarisida joylashgan bo'lishi mumkin.
+====
+USB va Firewire ulanishini ta'minlaydi.
+====
+Barcha fayllarni shifrlaydi.
+++++
+Windows Server-dagi tizim bo'limi har doim quyidagicha o'rnatilishi kerak:
+====
+#NTFS volume.
+====
+Dynamic disk.
+====
+Simple volume.
+====
+FAT32 volume.
+++++
+Axborot texnologiyalari infratuzilmasi kutubxonasining maqsadi:
+====
+#AT xizmatlarini boshqarish bo'yicha eng yaxshi amaliyotlar to'plami.
+====
+Tarmoq protokollari uchun standartlar to'plami.
+====
+Uskuna drayverlarini yuklab olish kutubxonasi.
+====
+Windows infratuzilmasi xizmatlarining texnik kutubxonasi.
+++++
+Kompyuterning yuklash qurilmalari tartibini o'zgartirish uchun quyidagilarni bajarishingiz kerak:
+====
+#BIOS settings.
+====
+Device Manager.
+====
+Disk Management.
+====
+Computer Policy.
+++++
+Windows serverining qaysi ikkita manzilini zaxiralash mumkin? (Ikkisini tanlang)
+====
+#Remote share folder, Local drive
+====
+Network router, Local drive
+====
+Local drive, Local DFS root share
+====
+Local DFS root share, Network router
+++++
+Qaysi Microsoft Office yangilanishlari avtomatik ravishda mijoz kompyuterlariga joylashtirilishini boshqarishingiz va qaysi vositadan foydalanishingiz kerak?
+====
+#Windows Server Update Services (WSUS)
+====
+Microsoft Office SharePoint Services (MOSS)
+====
+Windows Update
+====
+Microsoft Office Update
+++++
+Qaysi ikkitasi Windows Server klasterining turlari? (Ikkisini tanlang)
+====
+#Network Load Balancing (NLB), Failove
+====
+Shared storage, Failove
+====
+Failover, Shared services
+====
+Shared services, Network Load Balancing (NLB)
+++++
+64 bitli operatsion tizimlarning 32 bitli operatsion tizimlardan afzalligi qaysi?
+====
+#Katta miqdordagi RAMga kirish mumkin
+====
+Ko'proq qurilma drayverlari
+====
+Ko'proq mos keladigan dasturlar
+====
+Arzon uskunalar
+++++
+Tizimning vaqt o'tishi bilan ishlashining o'ziga xos jihatlari qaydlari quyidagilar deb nomlanadi:
+====
+#Log
+====
+Threshold
+====
+Event
+====
+Alert
+++++
+Jamoalarning hamkorlik qilishiga yordam beradigan qaysi texnologiya ishlab chiqilgan?
+====
+#Microsoft SharePoint Server
+====
+Microsoft System Center Operations Manager
+====
+Microsoft Forefront Identity Manager
+====
+Microsoft BizTalk Server
+++++
+Qaysi fayl kengaytmasi Hyper-V virtual disk faylini bildiradi?
+====
+#vhd
+====
+xml
+====
+vud
+====
+vsd
+++++
+Siz tarmoq printerlarini boshqarishni markazlashtirishingiz kerak. Shuningdek, foydalanuvchilarga joylashuvga qarab printerni tanlash imkoniyatini berishingiz kerak. Siz nima qilishingiz kerak?
+====
+#Printerlarni Active Directory-da nashr eting
+====
+Bir nechta bosib chiqarish serverlarini yarating
+====
+Internetda chop etishni o'rnating
+====
+Printer havzasini yarating
+++++
+Windows Server-da veb-saytni joylashtirish uchun nimani o'rnatishingiz kerak?
+====
+#Internet Information Server (IIS)
+====
+Active Directory Sites and Services
+====
+Windows Internet Naming Service (WINS)
+====
+Fully Qualified Domain Name (FQDN)
+++++
+Internet orqali xavfsiz aloqa uchun raqamli sertifikatlar qaysi texnologiyadan foydalaniladi?
+====
+#Secure Sockets Layer (SSL)
+====
+Fully Qualified Domain Name (FQDN)
+====
+Internet Service Manager (ISM)
+====
+File Transfer Protocol (FTP)
+++++
+Kompyuterni mahalliy yoki tarmoq printeriga bosib chiqarish uchun nima talab qilinadi?
+====
+#Printer qurilmasi drayverlari
+====
+qattiq diskdan 500 Gb bo'sh joy
+====
+RAM 1 GB
+====
+Boshqaruv vositalari
+++++
+Xizmatga kirishni cheklashingiz va xizmatni o'zgartirishingiz kerak:
+====
+#Logon options
+====
+Dependencies
+====
+Status
+====
+Startup type
+++++
+Boshqa xizmatni ishga tushirish uchun zarur bo'lgan xizmatlar xizmat deb ataladi:
+====
+#Dependencies
+====
+Roots
+====
+Prerequisites
+====
+Parents
+++++
+Microsoft-ning Windows Server uchun apparat talablariga qaysi ikkita texnik xususiyat kiritilgan? (Ikkisini tanlang)
+====
+#protsessor tezligi, RAM
+====
+USB portlari, RAM
+====
+RAM, Diskni kiritish / chiqarish
+====
+Diskni kiritish / chiqarish, protsessor tezligi
+++++
+Siz qo'llaniladigan guruh qoidalarining individual foydalanuvchi yoki kompyuterga qanday ta'sir ko'rsatishini ko'rishingiz va nima ishlatish kerak?
+====
+#Effective Permissions
+====
+Local Users and Groups
+====
+Resultant Set of Policy
+====
+Local Security Policy
+++++
+Active Directory-dagi yangi foydalanuvchi hisob qaydnomasi uchun standart manzil nima?
+====
+#The Users container
+====
+The Users Organizational Unit
+====
+The Accounts container
+====
+The Accounts Organizational Unit
+++++
+Foydalanuvchilar va kompyuterlarning markazlashtirilgan boshqaruvini ta'minlaydigan nima?
+====
+#Active Directory
+====
+Windows Internet nomi xizmati (WINS)
+====
+Dinamik xost konfiguratsiyasi protokoli (DHCP)
+====
+Masofaviy kirish
+++++
+Siz Windows Server 2008 guruh siyosatini qo'llashingiz kerak. Bundan tashqari, quyi darajalarda qo'llaniladigan siyosatlarning ushbu yangi siyosatga ta'sir qilishiga yo'l qo'ymaslik kerak. Siz nima qilishingiz kerak?
+====
+#Select the Enforced policy link setting
+====
+Set the policy to Loopback
+====
+Set the permission to Full Control
+====
+Select the Enabled policy link setting
+++++
+Siz Netinfo kompaniyasining administratorisiz. Siz Windows Server 2012 R2 ni o'rnatmoqchisiz va qaysi versiyani o'rnatishni hal qilishingiz kerak. Siz faqat tizimga kirish autentifikatsiyasi uchun Windows versiyasini o'rnatishingiz kerak va boshqa hech narsa yo'q. Siz eng xavfsiz variantni xohlaysiz va narx muammo emas. Nimani o'rnatishingiz kerak?
+====
+Windows Server 2012 R2 Datacenter with GUI
+====
+#Windows Server 2012 R2 Datacenter Server Core
+====
+Windows Server 2012 R2 Standard with GUI
+====
+Windows Server 2012 R2 Web Server Core
+++++
+Siz yirik tashkilotning IT menejerisiz. Sizning hamkasblaringizdan biri yangi Windows Server 2012 R2 Datacenter Server Core mashinasini o'rnatdi, ammo endi IT jamoasi bu GUI bilan Windows Server 2012 R2 Datacenter bo'lishi kerak, deb qaror qildi. Nima qilish kerak?
+====
+Xuddi shu mashinada Windows Server 2012 R2 Datacenter Server Core-ni qayta o'rnatish zarur.
+====
+Windows Server 2012 R2 Datacenter Server Core bilan yangi mashinani o'rnatish kerak.
+====
+#Joriy Windows Server 2012 R2 Datacenter Server yadrosini GUI versiyasiga ega Windows Server 2012 R2 Datacenterga aylantirish zarur.
+====
+Mashinani Windows Server 2012 R2 Datacenter Server Core va GUI bilan Windows Server 2012 R2 Datacenterni ikki marta yuklash zarur.
+++++
+Domen boshqaruvchisi sifatida sozlangan Windows Server 2012 R2 kompyuteri bir vaqtning o'zida qancha domenlarda qatnashishi mumkin?
+====
+#0
+====
+1
+====
+2
+====
+Istalgan miqdordagi domenlar
+++++
+Siz Active Directoryda printerda nashr qilmoqchisiz. Bu vazifani bajarish uchun qayerni bosgan bo'lardingiz?
+====
+#The Sharing tab (Ulashish yorlig'i)
+====
+The Advanced tab (Kengaytirilgan yorlig'i )
+====
+The Device Settings tab (Qurilma sozlamalari yorlig'i)
+====
+The Printing Preferences button  (Chop etish sozlamalari tugmasi)
+++++
+Siz GPO yaratasiz va uni Savdo tashkiloti bilan bog'laysiz. Savdo tashkilotidagi fayl serveriga ulangan foydalanuvchilarni kuzatmoqchisiz. Qaysi turdagi auditni faollashtirasiz?
+====
+Audit Object Access
+====
+#Audit Logon Events
+====
+Audit System Events
+====
+Audit Process Tracking
+++++
+Siz ABC kompaniyasining tarmoq administratorisiz. Sizda 2001:DB8:BBCC:0000::/53 IPv6 prefiksi bor va siz tarmoqni IPv6 manzillash sxemasi yana 1000 ta quyi tarmoqqa ishlay olishi uchun sozlashingiz kerak. Qaysi tarmoq niqobidan foydalanasiz?
+====
+/61.
+====
+/62.
+====
+#/63.
+====
+/64.
+++++
+Siz Stellacon korporatsiyasining tarmoq administratorisiz. Stellacon ichki tarmoqdagi barcha kompyuterlar bilan aloqa o'rnatishi kerak bo'lgan Windows Server 2012 R2 mashinasiga eg Stellacon o'zining IPv6 tarmog'iga 15 ta yangi segment qo'shishga qaror qildi. Server barcha segmentlar bilan aloqa o'rnatishi uchun IPv6 manzilini qanday sozlagan bo'lardingiz?
+====
+#IPv6 manzilini fd00::2b0:e0ff:dee9:4143/8 sifatida sozlang.
+====
+IPv6 manzilini fe80::2b0:e0ff:dee9:4143/32 sifatida sozlang.
+====
+IPv6 manzilini ff80::2b0:e0ff:dee9:4143/64 sifatida sozlang.
+====
+IPv6 manzilini fe80::2b0:e0ff:dee9:4143/64 sifatida sozlang.
+++++
+Windows Server 2012 R2 ning quyidagi x64 nashrlaridan qaysi birida Hyper-V ishlaydi? (Barcha tegishlilarini tanlang.)
+====
+Windows Server 2012 R2 Web Edition
+====
+Windows Server 2012 R2 Standard Edition
+====
+#Windows Server 2012 R2 Itanium Edition
+====
+Windows Server 2012 R2 GUI Web Edition
+++++
+Siz bitta Windows Server 2012 R2 mashinasida virtual mashinalar asosida sinov muhitini yaratmoqchisiz, lekin virtual mashinalar faqat bir-biri bilan muloqot qilishiga ishonch hosil qilishni ham xohlaysiz. Qaysi turdagi virtual tarmoqni sozlashingiz kerak?
+====
+Tashqi
+====
+Faqat ichki
+====
+#Shaxsiy virtual mashina tarmog'i
+====
+Umumiy virtual mashinalar tarmog'i
+++++
+Vazifa menejerida dasturning ishlashini to'xtatishingiz kerak. Ilova ishlamasligi uchun qaysi yorliqdan foydalanasiz?
+====
+Performance
+====
+Users
+====
+#Options
+====
+Details
+++++
+Birlashgan birlik ichidagi ob'ektlar uchun Guruh siyosatini o'rnatish uchun ruxsat berish jarayoni shunday nomlanadi:
+====
+Rag'batlantirish
+====
+Meros olish
+====
+#Delegatsiya
+====
+Filtrlash
+++++
+iSCSI uchun standart TCP porti nima? Javobsiz savol!
+====
+#3260
+====
+1433
+====
+21
+====
+3389
+++++
+Ba'zi domen kontrollerlaringizdagi UGMC opsiyasini o'chirib qo'yishingiz kerak. Active Directory-ning qaysi darajasida UGMC-ni o'chirasiz?
+====
+Server
+====
+#Sayt
+====
+Domen
+====
+Forest
+++++
+Buyruqlar satridan foydalanib, yangi foydalanuvchi hisobini yaratishingiz kerak. Qaysi buyruqdan foydalanasiz?
+====
+dsmodify
+====
+yaratmoq
+====
+dsnew
+====
+#dsadd
+++++
+Dasturiy ta'minot cheklovlarini qo'llash bo'yicha quyidagi strategiyalardan qaysi biri ma'mur tomonidan maxsus ruxsat etilganlardan tashqari har qanday bajariladigan faylning ishlashiga to'sqinlik qiladi?
+====
+Asosiy foydalanuvchi
+====
+#Ruxsat berilmagan
+====
+Kuchli foydalanuvchi
+====
+Cheklanmagan
+++++
+Windows Server 2012 R2 Server Core oʻrnatilishini Minimal Server interfeysiga aylantirish uchun quyidagi funksiyalardan qaysi biri qoʻshilishi kerak?
+====
+#Grafik boshqaruv vositalari va infratuzilmasi
+====
+Server grafik qobig'i
+====
+Windows PowerShell
+====
+Microsoft boshqaruv konsoli
+++++
+Quyidagilardan qaysi biri Active Directory mijozi boshqa domendagi obyektlarni topish uchun foydalanadi?
+====
+DNS
+====
+#Global katalog
+====
+DHCP
+====
+Sayt havolasi
+++++
+Quyidagi vazifalardan qaysi birini Windows Server 2008 bilan ishlaydigan serverda masofadan turib bajara olmaysiz?
+====
+#Server menejeri yordamida rollarni o'rnatish
+====
+Windows PowerShell yordamida rollarni o'rnatish
+====
+Kompyuter boshqaruvi qo'shimchasidan foydalanib, masofaviy serverga ulanish
+====
+Voqealar jurnali yozuvlarini kuzatib borish
+++++
+Windows Server 2012 R2 toʻliq GUI oʻrnatilishini Server Core oʻrnatilishiga aylantirish uchun qaysi xususiyatlarni olib tashlash kerak? 
+====
+Windows boshqaruv asboblari (WMI)
+====
+#Grafik boshqaruv vositalari va infratuzilmasi
+====
+Ish stoli tajribasi
+====
+Server grafik qobig'i
+++++
+Tizim Internetda ko'rinadigan IP manzilning qaysi turiga ega bo'lishi kerak?
+====
+#Registered
+====
+Binary
+====
+B sinf
+====
+Subneted
+++++
+Quyidagi buyruq qatori vositalaridan qaysi biri kompyuterni domenga ulash uchun ishlatiladi?
+====
+Net.exe
+====
+Netsh.exe
+====
+#Netdom.exe
+====
+Ipconfig.exe
+++++
+Quyidagi protsessor arxitekturalaridan qaysi biri toza Windows Server 2012 R2 o'rnatilishi uchun ishlatilishi mumkin?
+====
+Faqat 32 bitli protsessor
+====
+#Faqat 64 bitli protsessor
+====
+32 yoki 64 bitli protsessor
+====
+64-bit yoki Itanium protsessor
+++++
+Quyidagilardan qaysi biri Windows boshqaruv paneli yordamida foydalanuvchilarni qo'shishingiz mumkin bo'lgan mahalliy guruhlardir?
+====
+Foydalanuvchilar
+====
+Kuchli foydalanuvchilar
+====
+#Administratorlar
+====
+Administrator bo'lmaganlar
+++++
+AD DS domenidagi barcha kompyuterlarga xavfsizlik shablonidagi sozlamalarni o'rnatish uchun quyidagi vositalardan qaysi biri ishlatiladi?
+====
+Active Directory Users and Computers
+====
+Security Templates snap-in
+====
+Group Policy Object Editor
+====
+#Group Policy Management console
+++++
+Quyidagi atamalardan qaysi biri Windows keyinchalik o'rnatishi kerak bo'lishi mumkin bo'lgan barcha operatsion tizim modullarini saqlaydigan katalog nomi?
+====
+Windows
+====
+Tizim 32
+====
+Bin
+====
+#WinSxS
+++++
+Quyidagi vositalardan qaysi biri Network Discovery xavfsizlik devori qoidalarini yoqish va o‘chira olmaydi?
+====
+File Explorer
+====
+Network and Sharing Center
+====
+Action Center
+====
+#Allowed Apps dialog box
+++++
+Windows Server 2012 R2 NTFS ruxsat tizimida kengaytirilgan ruxsatlar kombinatsiyasi __________ ruxsatlar sifatida ham tanilgan.
+====
+Maxsus
+====
+#Asosiy
+====
+Ulashish
+====
+Standart
+++++
+Quyidagilardan qaysi biri Windows Server 2012 R2 da sozlanishi mumkin bo'lgan foydalanuvchi hisobi turi emas?
+====
+Local accounts
+====
+Domain accounts
+====
+#Network accounts
+====
+Built-in accounts
+++++
+Quyidagi Active Directory konteynerlaridan qaysi birini topish uchun Guruh siyosati qo'llanilishi mumkin?
+====
+Saytlar
+====
+OUs
+====
+Domenlar
+====
+#Yuqoridagilarning barchasi
+++++
+Active Directory - ________ tomonidan yaratilgan texnologiya bo'lib, turli tarmoq xizmatlarini taqdim etadi, jumladan:
+====
+Majburiy kirish nazorati
+====
+Active Directory
+====
+Microsoft SQL Server
+====
+#Rolga asoslangan kirishni boshqarish
+++++
+Server menejeri yordamida xizmatda quyidagi amallardan qaysi birini bajara olmaysiz? 
+====
+Ishlayotgan xizmatni to'xtatish
+====
+To'xtatilgan xizmatni ishga tushirish
+====
+#Xizmatni o'chirib qo'yish
+====
+Kompyuter ishga tushganda ishga tushadigan xizmatni sozlash
+++++
+Quyidagilardan qaysi biri bir nechta Active Directory domenlarini o'z ichiga olmaydi?
+====
+#Organizational units
+====
+Sites
+====
+Trees
+====
+Forest
+++++
+Active Directory-da nechta guruh doirasi mavjud?  
+====
+#3
+====
+0
+====
+10
+====
+5
+++++
+Quyidagi atamalardan qaysi biri foydalanuvchilarga ularning ruxsatlarini o'qish orqali fayl serverlari ulashishlariga ruxsat berish jarayonini tavsiflaydi?
+====
+Authentication
+====
+#Authorization
+====
+Enumeration
+====
+Assignment
+++++
+Chop etish qurilmalaringizdan biri to‘g‘ri ishlamayapti, shuning uchun foydalanuvchilarning ushbu qurilmaga xizmat ko‘rsatadigan printerga ish yuborishlarini vaqtincha oldini olishni xohlaysiz. Quyidagi harakatlardan qaysi birini qilish kerak?
+====
+#Printerni almashishni to'xtatish
+====
+Printerni Active Directory-dan olib tashlash
+====
+Printer portini o'zgartirish
+====
+Ulanish nomini o'zgartirish
+++++
+Sizda Windows Server 2012 bilan ishlaydigan Server1 nomli serveringiz bor. Siz Server1 ni domen boshqaruvchisiga aylantirasiz. Server1 DNS-da ro'yxatdan o'tgan xizmat joylashuvi (SVR) yozuvlarini ko'rishingiz kerak. Server1 da nima qilish kerak?
+====
+Srv.sys faylini oching
+====
+#Netlogon.dns faylini oching
+====
+ipconfig/displaydns-ni ishga tushiring
+====
+Get-DnsServerDiagnostics-ni ishga tushiring
+++++
+Siz kompaniyangizning administratorisiz va siz Windows Server 2008 veb-serveringizni Windows Server 2012 R2 ga yangilamoqchisiz. Microsoft Windows Server 2012 R2 ning qaysi versiyasidan foydalanishni tavsiya qiladi?
+====
+Windows Server 2012 R2 Datacenter
+====
+#Windows Server 2012 R2 Standard
+====
+Windows Server 2012 R2 Essentials
+====
+Windows Server 2012 R2 Foundation
+++++
+Siz Windows Server 2008 R2 Enterprise-ni SP2 mashinasi bilan Windows Server 2012 R2-ga yangilamoqchisiz. Tashkilotingiz 25 ta serverga ega boʻlgan butun server xonasini virtualizatsiya qilishni koʻrib chiqmoqd Windows Server 2012 R2 ning qaysi versiyasiga yangilagan bo'lardingiz?
+====
+#Windows Server 2012 R2 Datacenter
+====
+Windows Server 2012 R2 Standard
+====
+Windows Server 2012 R2 Essentials
+====
+Windows Server 2012 R2 Foundation
+++++
+Siz kichik kompaniyaga birinchi Windows tarmog'ini o'rnatishda yordam berish uchun ishga olingansiz.U ochilgan ikki yil davomida bir xil 13 foydalanuvchiga ega edi va kompaniya kengaytirishni rejalashtirmaydi. Windows Server 2012 R2 ning qaysi versiyasini tavsiya qilasiz?
+====
+Windows Server 2012 R2 Datacenter
+====
+Windows Server 2012 R2 Standard
+====
+Windows Server 2012 R2 Essentials
+====
+#Windows Server 2012 R2 Foundation
+++++
+Siz kichik kompaniyaga Windows tarmog'ini o'rnatishda yordam berish uchun yollangansiz. Uning 20 ta foydalanuvchisi bor va u kengaytirishni rejalashtirmaydi. Windows Server 2012 R2 ning qaysi versiyasini tavsiya qilasiz?
+====
+Windows Server 2012 R2 Datacenter
+====
+Windows Server 2012 R2 Standard
+====
+#Windows Server 2012 R2 Essentials
+====
+Windows Server 2012 R2 Foundation
+++++
+Siz server administratorisiz va siz Windows Server 2012 R2 Datacenter kompyuteringizda qattiq disk maydonini tejashga harakat qilyapsiz. Qaysi xususiyat qattiq diskdagi joyni tejashga yordam beradi?
+====
+HDSaver.exe
+====
+#Features On Demand
+====
+ADDS
+====
+WinRM
+++++
+Siz Windows Server 2012 R2 bilan ishlaydigan SRV1 nomli serveringiz bor. Ushbu qurilmadan Windows Explorer, Windows Internet Explorer va barcha komponentlar va fayllarni olib tashlamoqchisiz. Qaysi buyruqni bajarish kerak?
+====
+msiexeexe /uninstall iexplore.exe /x
+====
+msiexeexe /uninstall explorer.exe /x
+====
+Uninstall-WindowsFeature Server-Gui-Mgmt-Infra Remove
+====
+#Uninstall-WindowsFeature Server-Gui-Shell Remove
+++++
+Jismoniy xavfsizlik muammosi bo'lgan hududga qanday turdagi domen boshqaruvchisini o'rnatasiz?
+====
+Primary domain controller
+====
+Backup domain controller
+====
+#Read-only domain controller
+====
+Locked-down domain controller
+++++
+105.  Quyidagilardan qaysi biri har bir DNS domen nomi haqida ishonchli ma'lumot manbai hisoblanadi?
+====
+Perfmon
+====
+#Zone
+====
+Record
+====
+Sysprep
+++++
+106. Quyidagi tizimlardan qaysi biri domenlar ierarxiyasida tashkil etilgan kompyuterlar va tarmoq xizmatlarini nomlash uchun foydalaniladi?
+====
+NAP
+====
+#DNS
+====
+NPS
+====
+DCS
+++++
+Quyidagi DNS elementlaridan qaysi biri DNS so'rovlarini yaratadi va ularni bajarish uchun DNS serveriga yuboradi?
+====
+DNS nom maydoni
+====
+Nom server
+====
+#Resolver
+====
+Forwarder
+++++
+Quyidagi serverlardan qaysi biri xost nomlarini IP manzillarga aylantirish uchun ishlatiladi?
+====
+#DNS server
+====
+Tarmoq server
+====
+Web server
+====
+Fayl server
+++++
+Windows Server 2012 Dynamic DNS (DDNS) haqida quyidagi bayonotlardan qaysi biri to'g'ri?
+====
+DDNS ishlashi uchun Microsoft DHCP serveri talab qilinadi.
+====
+#Windows Server 2012 DDNS serveri BIND ning so'nggi versiyalari bilan o'zaro ishlashi mumkin.
+====
+DDNS mijozlari o'z manzillarini ro'yxatdan o'tkaza olmaydi.
+====
+DDNS faqat Microsoft mijozlari va serverlari bilan ishlaydi.
+++++
+Quyidagi so'rovlardan qaysi biri o'sha paytda ega bo'lgan eng yaxshi ma'lumot bilan darhol javob beradi?
+====
+Recursive query
+====
+Action query
+====
+#Iterative query
+====
+Parameter query
+++++
+Quyidagilardan qaysi biri nom serverlari va ba'zi DNS mijozlari tomonidan nom keshda saqlanishi kerak bo'lgan vaqt miqdorini bilish uchun ishlatiladi?
+====
+DNS Time
+====
+#Time to Live
+====
+Time to CNAME
+====
+Caching Time
+++++
+Quyidagilardan qaysi biri mintaqa maʼlumotlarining asosiy nusxasini mahalliy faylda yoki AD DS da saqlaydigan zona hisoblanadi?
+====
+Integrated
+====
+#Primary
+====
+Stub
+====
+Secondary
+++++
+Quyidagi zona turlaridan qaysi biri zona ma'lumotlar bazasining asosiy nusxasini o'z ichiga oladi?
+====
+Stub zone
+====
+Secondary zone
+====
+#Primary zone
+====
+Hybrid zone
+++++
+Quyidagilardan qaysi biri vakolatli zona ma'lumotlarini joriy qiladi va nom aniqligini yaxshilaydi?
+====
+GlobalName
+====
+Primary
+====
+#Stub
+====
+Secondary
+++++
+Quyidagi funksiyalardan qaysi biri DNS-serverga DNS so'rovlarini berishda manba portini tasodifiylashtirishdan foydalanish imkonini beradi?
+====
+#DNS socket pool
+====
+DHCP
+====
+DNS logging
+====
+Cache locking
+++++
+Quyidagi xususiyatlardan qaysi biri DNS serverlari uchun DNS javoblarini tekshirish imkoniyatini ta'minlash orqali DNS protokoliga xavfsizlikni qo'shadi?
+====
+#DNSSEC
+====
+DNS socket pool
+====
+Cache locking
+====
+DNS logging
+++++
+Quyidagilardan qaysi biri DNS yozuviga biriktirilgan yashash vaqti (TTL) haqida to'g'ri?
+====
+Uni hal qiluvchi tomonidan ishlatib bo'lmaydi; u faqat rekursiv so'rovlarni amalga oshiradigan serverlar tomonidan ishlatilishi mumkin.
+====
+U faqat rezolyutsiyachilar tomonidan qo'llaniladi.
+====
+#Qabul qilingan natijalarni qancha vaqt keshlash kerakligini aniqlash uchun foydalaniladi.
+====
+Yozuv har safar o'zgartirilganda u yangilanadi.
+++++
+Quyidagilardan qaysi biri xost nomlarini xost IP-manziliga solishtirish uchun foydalaniladigan 128-bitli IPv6 manzilini qaytaradi?
+====
+A
+====
+#AAAA
+====
+CNAME
+====
+SOA
+++++
+ Quyidagilardan qaysi biri DNS domen nomini kompyuter tomonidan ishlatiladigan IP manzilga solishtirish uchun ishlatiladi? 
+====
+#A
+====
+AAAA
+====
+CNAME
+====
+SOA
+++++
+Quyidagilardan qaysi biri DNS domen nomini ma'lum bir xizmat turini taklif qiluvchi DNS xost-kompyuterlari ro'yxatiga moslashtirish uchun ishlatiladi?
+====
+A
+====
+AAAA
+====
+#CNAME
+====
+SOA
+++++
+Quyidagilardan qaysi biri kompyuterning IP manzili asosida teskari DNS domen nomini ko'rsatish uchun ishlatiladi?
+====
+A
+====
+AAAA
+====
+PTR
+====
+#SOA
+====
+ Quyidagi fayl tizimlaridan qaysi biri OS yuklash hajmi va ma'lumotlarni saqlash uchun boshqa umumiy ehtiyojlar uchun ishlatiladi?
+====
+#NTFS
+====
+ReFS
+====
+VSS
+====
+ABE
+++++
+ NTFS qanday vazifani bajaradi?
+====
+U tarmoq serverini turli hajmlarga ulaydi.
+====
+#Bu disk kvotalari qo'llab-quvvatlaydi.
+====
+Diskda bo'lim qayerda joylashganligini tekshiradi.
+====
+U disk xususiyatlarini tekshiradi.
+++++
+Guruhlar boshqa guruhlarga a'zo sifatida qo'shilganda quyidagi atamalardan qaysi biri qo'llaniladi?
+====
+#Group nesting
+====
+Group merging
+====
+Group pooling
+====
+Group collection
+++++
+Quyidagi xususiyatlardan qaysi biri ma'murlarga uzoq saytlarga replika domen kontrollerlarini joylashtirish jarayonini soddalashtirish imkonini beradi?
+====
+SRV record
+====
+#IFM
+====
+DNS pool
+====
+Hyper-V replication
+++++
+Quyidagi xizmatlardan qaysi biri ma'murlarga domenlar deb ataladigan tashkiliy bo'limlarni yaratish imkonini beradi?
+====
+#AD DS
+====
+AD CS
+====
+AD FS
+====
+AD LDS
+++++
+Qaysi buyruq yangi dasturni ishga tushiradi?
+====
+IFM
+====
+#Ntdsutil
+====
+RODC
+====
+SYSVOL
+++++
+Windows Server 2012 R2 Active Directory-ni qo'llab-quvvatlash uchun quyidagi protokollar yoki xizmatlardan qaysi birini ishlatishni talab qiladi?
+====
+DHCP
+====
+#TCP/IP, DNS
+====
+NetBEUI
+====
+IPX/SPX
+++++
+Birlashtirilgan identifikatsiya boshqaruvini amalga oshirish uchun quyidagilardan qaysi biri yordam beradi?
+====
+#Active Directory Federation Services
+====
+Active Directory DNS Services
+====
+Active Directory IIS Services
+====
+Active Directory IAS Services
+++++
+Domen boshqaruvchisi sifatida sozlangan Windows Server 2012 R2 kompyuteri bir vaqtning o'zida qancha domenlarda qatnashishi mumkin?
+====
+Nol
+====
+#Bitta
+====
+Ikkita
+====
+domenlar soni ko‘p
+++++
+ Quyidagi funksiyalardan qaysi biri faqat foydalanuvchi ruxsati bor fayl va papkalarni aks ettiradi?
+====
+#Access-based enumeration
+====
+Server resource manager
+====
+File screening
+====
+Hyper-V quorum
+++++
+Quyidagi xizmatlardan qaysi biri COM interfeyslari to'plamidir?
+====
+AD DS
+====
+AD FS
+====
+#VSS
+====
+AD RMS
+++++
+Quyidagi parametrlardan qaysi biri ikkita yoki undan ortiq bir xil printerlarni bitta printer dasturiy ta'minoti bilan bog'laydi?
+====
+#Printer pool
+====
+Easy print driver
+====
+Enterprise print manager
+====
+Printer priorities
+++++
+Quyidagi printer ruxsatlaridan qaysi biri printerni to'xtatib turish va qayta ishga tushirish imkoniyatini beradi?
+====
+Print
+====
+Manage Document
+====
+#Manage Printer
+====
+Share Printer
+++++
+Quyidagi vositalardan qaysi biri to'g'ridan-to'g'ri buyruq satridan Windows xususiyatlarini yoqish yoki o'chirish uchun ishlatiladi?
+====
+Microsoft Management Console tool
+====
+Vmware tool
+====
+#Deployment Image Servicing and Management tool
+====
+Network Management tool
+++++
+Kompaniya sizdan foydalanuvchilarning uy papkalari joylashuvi uchun server o'rnatishingizni xohlaydi. Qaysi turdagi serverni o'rnatgan bo'lardingiz?
+====
+PDC server
+====
+Web server
+====
+Exchange server
+====
+#Fayl server
+++++
+Sizda serverga qattiq diskni o'rnatish imkoniyati yo'q, shuning uchun siz qattiq diskda har bir kishi oladigan joy miqdorini cheklash uchun nima qilishingiz kerak?
+====
+Disk spacing
+====
+#Disk quotas
+====
+Disk hardening
+====
+Disk limitations
+++++
+Siz printerni Active Directoryda hujjatni chop qilmoqchisiz. Bu vazifani bajarish uchun qayerni bosgan bo'lardingiz?
+====
+#The Sharing tab
+====
+The Advanced tab
+====
+The Device Settings tab
+====
+The Printing Preferences button
+++++
+Quyidagilardan qaysi biri tashkiliy bo'linmalarning vazifasidir?
+====
+U soket hovuzini sozlash uchun ishlatiladi.
+====
+Bu keshlangan yozuvlarni qayta yozishga imkon beradi.
+====
+#U ob'ektlarni boshqarishni topshirish uchun ishlatiladi.
+====
+U DNS xavfsizligini sozlaydi.
+++++
+OU qanday vazifani bajaradi?
+====
+#U tashkilotingizdagi ierarxik, mantiqiy tuzilmalarni ifodalovchi domen ichida konteynerlarni yaratadi.
+====
+Bu har qanday manbaga kirishni osonlashtiradi.
+====
+U bir nechta domenni o'z ichiga olgan va tashkilotingizdagi ierarxik, mantiqiy tuzilmalarni ifodalovchi konteynerlarni yaratadi.
+====
+U guruhni asosiy guruh sifatida belgilaydi.
+++++
+Quyidagilardan qaysi biri OU tuzilmasini rejalashtirishda ahamiyatsiz rol o'ynashi kerak?
+====
+#Network infrastructure
+====
+Domain organization
+====
+Delegation of permissions
+====
+Group Policy settings
+++++
+Quyidagilardan qaysi biri ob'ektlarni boshqarishni topshirish uchun ishlatiladi?
+====
+DNS pool
+====
+#Organizational unit
+====
+Disks pool
+====
+AD DS
+++++
+Tizim ma'muri foydalanuvchilar guruhiga ma'lum bir tashkiliy birlikka (OU) kompyuter hisoblarini qo'shishga ruxsat bermoqchi. Faqat kerakli ruxsatlarni berishning eng oson yo'li qanday?
+====
+Delegate control at the domain level.
+====
+Delegate control of an OU.
+====
+Delegate control of a computer account.
+====
+#Create a Group Policy object (GPO) at the OU level.
+++++
+Yuqori darajadagi xavfsizlik organining boshqa ma'murlarga ruxsat berish jarayoni quyidagilardan qaysi biri sifatida ma'lum?
+====
+Inheritance
+====
+#Delegation
+====
+Assignment
+====
+Trust
+++++
+Active Directory ning qaysi sinfida bo'ysunuvchi ob'ektlar mavjud?
+====
+Resource
+====
+Leaf
+====
+Domain
+====
+#Container
+++++
+Quyidagilardan qaysi biri xavfsizlik printsipi hisoblanmaydi?
+====
+Foydalanuvchilar
+====
+Xavfsizlik guruhlari
+====
+#Tarqatish guruhlari
+====
+Kompyuterlar
+++++
+Quyidagi xususiyatlardan qaysi biri o'rmondagi barcha AD DS ob'ektlari indeksi bo'lib, tizimlarning bir nechta DC o'rtasida qidiruvni amalga oshirishiga to'sqinlik qiladi?
+====
+#Global catalog
+====
+Server core
+====
+SRV record
+====
+Organizational unit
+++++
+Quyidagilardan qaysi biri foydalanuvchi ruxsat etilmagan faylni saqlashga harakat qilganda skrining turini, bloklanadigan fayl guruhlari toʻplamini va yaratiladigan bildirishnomalar toʻplamini aniqlash uchun ishlatiladi?
+====
+File
+====
+#Template
+====
+Specification
+====
+Documentation
+++++
+Active Directory-ga ob'ektlarni qo'shish, o'chirish yoki o'zgartirish uchun qaysi buyruq ishlatiladi?
+====
+DCPROMO
+====
+#LDIFDE
+====
+CSVDE
+====
+NSLOOKUP
+++++
+Qaysi guruh foydalanuvchilarni resurslarga kirish ehtiyojlariga qarab tartibga soladi?
+====
+Global group
+====
+Domain local group
+====
+Built-in group
+====
+#Universal group
+++++
+Windows Server 2003 fayl va printer resurslarini Active Directory ichidan qanday qilib foydalanish mumkin?
+====
+Tizim ma'muri resursni sichqonchaning o'ng tugmasi bilan bosib, "Nashr etish" ni tanlashi mumkin.
+====
+#Tizim administratori ushbu resurslarga ishora qiluvchi Printer va Shared Folder obyektlarini yaratishi mumkin.
+====
+Resurslarni mavjud qilish uchun Active Directory domenlari va ishonchli vositalaridan foydalanish mumkin.
+====
+Active Directory ichidan faqat Windows 2000 yoki undan yuqori serverdagi resurslarga kirish mumkin.
+++++
+Quyidagi utilitalardan qaysi biri oflayn domenga ulanish uchun foydalanasiz?
+====
+Net join
+====
+Join
+====
+#Djoin
+====
+Dconnect
+++++
+Foydalanuvchi kompyuteri va tarmoqdagi resurslar o'rtasida vositachilik vazifasini bajaradigan qidiruv server bu
+====
+#Proxy
+====
+Active
+====
+Apache
+====
+Windows 
+++++
+IP manzilni aniqlash buyrug’i
+====
+ip con
+====
+#ipconfig /all
+====
+ip config
+====
+runconfig
+++++
+Hisoblash tizimlari tarkibi quyidagi qismlardan iborat:
+====
+#apparat va dasturiy ta’minot
+====
+qurilma va dasturlar;
+====
+qurilmalardan;
+====
+faqat dasturlardan
+++++
+ Dastur:
+====
+#buyruqlarning tartiblangan ketma-ketligi
+====
+buyruqlar to‘plami
+====
+qurilmalar
+====
+Buyruqlarning istalgan ketma ketligi
+++++
+Dasturiy ta’minot quyidagi bo‘limlardan iborat:
+====
+#asos Dasturiy ta’minot, tizimli Dasturiy ta’minot, xizmatchi Dasturiy ta’minot, amaliy Dasturiy ta’minot;
+====
+asos Dasturiy ta’minot, tizimli Dasturiy ta’minot;
+====
+tizimli Dasturiy ta’minot;
+====
+Amaliy qismlardan
+++++
+Amaliy dasturiy ta’minot:
+====
+#ma’lum ish joyida aniq masalalarni yechishga yordam beradigan dastur;
+====
+qurilmalarni ishlatuvchi;
+====
+hisoblash tizimini nazorat qiluvchi
+====
+hamma javoblar to‘g‘ri
+++++
+Tizimli dasturiy ta’minot bu:
+====
+#kompyuter tizimining dasturlari va bevosita apparat ta’minoti bilan o‘zaro bog‘lanishini ta’minlaydi;
+====
+kompyuter qurilmalarini ishishni ta’minlaydi;
+====
+amaliy masalalarni yechimini ta’minlaydi;
+====
+kompyuter ishini nazorat qiladi
+++++
+TDT bu:
+====
+#operatsion tizim va drayverlar, utilitalar;
+====
+mikrosxemaga tikilgan datsurlar;
+====
+utilitalar;
+====
+amaliy masalalar dasturi
+++++
+Matn redaktori Word bu:
+====
+#amaliy Dasturiy ta’minotga kiradi;
+====
+xizmatchi Dasturiy ta’minotga kiradi;
+====
+asos Dasturiy ta’minotga kiradi;
+====
+tizimli Dasturiy ta’minotga kiradi
+++++
+ Operatsion tizim bu:
+====
+#tizimli Dasturiy ta’minotga kiradi;
+====
+xizmatchi Dasturiy ta’minotga kiradi;
+====
+amaliy Dasturiy ta’minotga kiradi;
+====
+asos Dasturiy ta’minotga kiradi
+++++
+Operatsion tizim kengaytirilgan mashina sifatida:
+====
+#foydalanuvchiga real apparatura bilan ishlash o‘rniga qulay interfeys yaratadi;
+====
+qurilmalar bilan to‘g‘ridan-to‘g‘ri ishlaydi;
+====
+fayllar bilan to‘g‘ridan-to‘g‘ri ishlaydi;
+====
+dastur bilan ishlaydi
+++++
+Operatsion tizim 2 ta asosiy funktsiyani bajaradi:
+====
+#foydalanuvchiga kengaytirilgan mashina sifatida va resurslarni boshqaruvchi sifatida xizmat qiladi.
+====
+foydalanuvchi uchun qulay interfeys va kodlarni yashirish
+====
+resurslarni kuzatish va taqsimlash
+====
+qurilmalar va fayllarni taqsimlaydi
+++++
+Operatsion tizim resurslarni boshqaruvchi sifatida
+====
+#resurslarni rejalashtiradi (kimga, qachon va qancha) va resurslarni kuzatadi (bo‘sh yoki band);
+====
+resurslarni to‘g‘ridan-to‘g‘ri taqsimlaydi;
+====
+resurslarni rejalashtiradi;
+====
+resurslarni kuzatadi
+++++
+Operatsion tizim bu:
+====
+#hamma javoblar to‘g‘ri
+====
+foydalanuvchi interfeysini bajaradi;
+====
+dasturlar bilan dastur interfeysi;
+====
+dasturlar bilan qurilmalar o‘rtasidagi interfeys;
+++++
+Operatsion tizim xali mavjud bo‘lmagan davr:
+====
+rivojlanish 1-davri (1945-1955 y.);
+====
+rivojlanish 2-davri (1955-1965 y.);
+====
+rivojlanish 3-davri (1965-1980 y.);
+====
+rivojlanish 4-davri (1980-hozirgi vaqtgacha)
+++++
+Birinchi paketli ishlov berish tizimlari paydo bo‘lgan:
+====
+#rivojlanish 2-davri (1955-1965 y.);
+====
+rivojlanish 1-davri (1945-1955 y.);
+====
+rivojlanish 3-davri (1965-1980 y.);
+====
+rivojlanish 4-davri (1980-hozirgi vaqtgacha)
+++++
+Multidasturlash rejimida ishlaydigan Operatsion tizimlar:
+====
+#rivojlanish 3-davriga yuzaga keldi;
+====
+rivojlanish 2-davriga yuzaga keldi;
+====
+rivojlanish 1-davriga yuzaga keldi;
+====
+drivojlanish 4-davriga yuzaga keldi
+++++
+Multidasturlash bu hisoblash jarayonini tashkil qilish usuli bo‘lib, bitta protsessorda:
+====
+#bir necha dastur navbat bilan bajariladi;
+====
+bitta dastur bajariladi;
+====
+bitta dastur ham bajarilmaydi;
+====
+barcha dasturlar
+++++
+4-rivojlanish bosqichida quyidagi operatsion tizim yuzaga keldi:
+====
+#taqsimlangan (resurslarni taqsimlovchi) tizimlar, ya’ni tarmoqda ishlaydigan tizim
+====
+paketli ishlov berish tizimi;
+====
+ajratilgan vaqt tizimi;
+====
+avtonom rejimda ishlaydigan tizim;
+++++
+Klassik operatsion tizimning asosiy funktsiyalari:
+====
+#xamma javoblar to‘g‘ri
+====
+topshiriqlarni bajarish va protsessor vaqtini taqsimlash, fayllarni boshqarish;
+====
+sinxronizatsiya va kommunikatsiya vositalari;
+====
+himoya vositalari va xotirani taqsimlash, kiritish-chiqarishni boshqarish;
+++++
+Operatsion tizimning asosiy funktsiyalari nechta?
+====
+#6 ta
+====
+5 ta
+====
+3 ta
+====
+1 ta
+++++
+Operatsion tizim-
+====
+#foydalanuvchilar uchun interfeysni tashkil etadi;
+====
+bajariluvchi dasturlar uchun interfeysni tashkil etadi;
+====
+xizmatchi dasturlar uchun interfeysni tashkil etadi;
+====
+dasturlar uchun interfeysni tashkil etadi;
+++++
+Dasturiy ta’minot deganda:
+====
+#kompyuterning shu modelida bajarilishi mumkin bo‘lgan dasturlarni va dasturiy xujjatlarni o‘z ichiga olgan majmuani (komplektni) tushunamiz;
+====
+dasturlash tillarini tushunamiz;
+====
+apparat ta’minotni tushunamiz;
+====
+dasturiy modellarni tushunamiz
+++++
+SOFTWARE-bu:
+====
+#dasturiy ta’minot;
+====
+apparat ta’minot;
+====
+yordam tizimi;
+====
+qo‘shimcha tizim
+++++
+Hardware - bu
+====
+#apparat ta’minot;
+====
+dasturiy ta’minot;
+====
+dasturiy modul;
+====
+protsessor
+++++
+Kompyuter resurslari-
+====
+#apparat vositalari, dasturiy vositalar va turli ma’lumotlar to‘plamidan iboratdir;
+====
+ma’lumotlar to‘plami;
+====
+dasturlar to‘plami;
+====
+kiritish qurilmalari
+++++
+Hisoblash tizimi:
+====
+#apparat ta’minot va dasturiy ta’minotga bo‘linadi;
+====
+apparat ta’minotidan iborat;
+====
+dasturiy ta’minotdan iborat;
+====
+qurilmalardan iborat
+++++
+Assimetrik va simmetrik OT larga bo‘linish: 
+====
+#Hisoblash jarayonini tashkil etishda ko‘protsessorli ishlov berish usuli bo‘yicha sinflarga ajratishga to‘g‘ri keladi
+====
+Hisoblash ko‘poqimli  tashkil etish bo‘yicha sinflashga to‘g‘ri keladi
+====
+Hisoblash jarayonini tashkil etish usuli bo‘yicha sinflashga to‘g‘ri keladi
+====
+Ko‘pfoydalanuvchili rejimni quvvatlash bo‘yicha sinflashga to‘g‘ri keladi
+++++
+MS Office ilovalari bu:
+====
+#amaliy dasturiy ta’minot dasturlaridir;
+====
+xizmatchi Dasturiy ta’minot dasturlaridir;
+====
+asos Dasturiy ta’minot dasturlaridir;
+====
+tizimli Dasturiy ta’minot dasturlaridir
+++++
+Operatsion qobiqlar bu:
+====
+#tizimli dasturiy ta’minot dasturidir;
+====
+xizmatchi dasturdir;
+====
+amaliy dasturdir;
+====
+asos dasturiy ta’minot
+++++
+Operatsion tizimlar:
+====
+#kompyuterning (hisoblash tizimining) hamma apparat vositalarining ishini samarali va uning barcha resurslarini boshqarish imkonini beradi;
+====
+faqat apparat vositalarini ishini ta’minlaydi;
+====
+faqat ma’lumotlarni boshqaradi;
+====
+faqat fayillarni boshqaradi
+++++
+Operatsion qobiqlar:
+====
+#operatsion tizim ishini boshqarish qulayligini oshiradigan qo‘shimcha dasturdir;
+====
+operatsion tizim himoyasini oshiradi;
+====
+operatsion tizim ishini kuzatadi;
+====
+kiritish-chiqarishni boshqaradi
+++++
+Utilitalar bu shunday foydali dasturlarki:
+====
+#xajmi kichik dasturlar bo‘lib, apparat vositalar ishini boshqaradi, turli yordamchi funktsiyalarni, ishlovchanlik qobilyatini, sozlashni tekshiradi;
+====
+faqat sozlaydi;
+====
+xizmat qiladi, ishlovchanligini tekshiradi;
+====
+apparat vositalar ishini kuzatadi.
+++++
+Parallel jarayonlarni bajarilishini tashkil etishdagi “tupik” muammosini bartaraf etishning quyidagi usullari mavjud:
+====
+#“tupik” holat oldini olish, “tupik”ni aylanib o‘tish, “tupik” ni tanish va chora ko‘rish
+====
+“tupik” holat oldini olish, jarayonni qayta tashkil etish
+====
+Jarayonni to‘xtatish, “tupik”ni aylanib o‘tish
+====
+“tupik”ni tanish, “tupik” kirish xavfli holatni ta’qiqlash
+++++
+Quyidagi mobil  operatsion tizimlarning qay biri ko‘p masalali, ochiq kodli, Google ilovalari bilan qulay bog‘lanib ishlaydi
+====
+#Android OS
+====
+WinMobile
+====
+iPhone OS
+====
+Palm OS
+++++
+Operatsion tizimning asosiy komponentalaridan biri buyruqlar protsessori quyidagi funktsiyalarni bajaradi
+====
+#Tashqi qurilmalar yordamida kiritish va chiqarishni amalga oshiradi
+====
+Masala va resurslarni boshqaradi
+====
+Buyruqlarni qayta ishlaydi va bajaradi
+====
+Ma’lumotlarni mantiqiy darajasi bilan ishlaydi
+++++
+Dastur versiyasi bu –
+====
+#printsip jixatidan yangi funktsiya qo‘shilgan, ma’lumotlar o‘zgacha tashkil etilan, foydalanuvchi bilan muloqotning yangi usuli qo‘llanadigan dastur.
+====
+boshqa apparat platformaga mo‘ljallangan dastur;
+====
+funktsiyalari jixatidan yangidan tuzilgan dastur;
+====
+kichik xatolari tuzatilgan dastur, kichik o‘zgarishlar kiritilgan dastur;
+++++
+Dastur modifikatsiyasi bu:
+====
+#kichik xatolar tuzatilgan dastur kichik o‘zgartirishlar dasturi;
+====
+yangi funktsiya qo‘shilgan dastur;
+====
+ma’lumotlar o‘zgacha tashkil etilgan;
+====
+foydalanuvchi bilan muloqotning yangi usul qo‘llangan dastur
+++++
+Win NT, Win 2000 va Win XP operatsion tizimlar:
+====
+#bitta oila hisoblanadi;
+====
+bitta versiya hisoblanadi;
+====
+bitta modifikatsiya hisoblanadi;
+====
+turli oila hisoblanadi
+++++
+Operatsion tizimning interfeysda milliy tillardan foydalanadigan versiyalari:
+====
+#lokallashtirilgan versiya deb ataladi
+====
+milliy versiyasi deb ataladi;
+====
+modifikatsiyalashtirilgan versiyasi deb ataladi;
+====
+global versiyasi deb ataladi;
+++++
+Foydalanuvchi real apparatura bilan ish ko‘rishda mashina tilidan foydalanmasdan, qulay interfeysda ishlashi uchun:
+====
+#operatsion tizim kengaytirilgan mashina, virual mashina sifatida xizmat qiladi;
+====
+operatsion tizim resurslarni boshqaruvchi sifatida xizmat qiladi;
+====
+dasturlarni boshqaruvchi sifatida xizmat qiladi;
+====
+qurilmalarni boshqaruvchi sifatida xizmat qiladi
+++++
+Operatsion tizim resurslarni samarali boshqarishi uchun:
+====
+#resurslarni rejalashtirish va resurs xolatini kuzatishi zarur;
+====
+dasturlarni boshqarishi;
+====
+resurslarni taqsimlashi	
+====
+resurs holatini kuzatadi
+++++
+Operatsion tizimlarning 1-rivojlanish davrida (1945-1955 y) qanday dasturlar mavjud bo‘lgan?
+====
+#standart funktsiyalar kutubxonasi;
+====
+operatsion tizim;
+====
+fayl boshqaruvchi tizimi;
+====
+hech qanday dastur bo‘lmagan
+++++
+“Montiruemaya” – “montirovka qilinadigan” fayl tizimi bu:
+====
+#qo‘shimcha o‘rnatiladigan fayl tizimi
+====
+OT ning o‘zining fayl tizimi
+====
+OT komponentasi
+====
+FAT fayl tizimi
+++++
+Multidasturli, ko‘pfoydalanuvchili operatsion tizimlar bu:
+====
+#UNIX operatsion tizimlar;
+====
+MS DOS
+====
+Win 3x
+====
+Win 2.0.
+++++
+Hisoblash tizimi boshqaradigan jarayonlar qat’iy vaqt chegaralarini qoniqtiradigan operatsion tizimlar:
+====
+#real vaqt rejimida ishlaydigan operatsion tizimlar;
+====
+paketli ishlov berish rejimida ishlaydigan operatsion tizimlar;
+====
+taqsimlangan rejimida ishlaydigan operatsion tizimlar;
+====
+monolit operatsion tizimlar
+++++
+Tarmoq operatsion tizimining qaysi qismi ma’lumotlarni adreslash, buferlash, va uzatilishidagi xavfsizlikni ta’minlaydi?
+====
+#Kommunikatsion vositalar
+====
+Klient qismi
+====
+Server qismi
+====
+Kompyuterni lokal resurslarini boshqaruvchi vosita
+++++
+ Protsessor vaqti:
+====
+chegaralangan resurs
+====
+chegaralanmagan resurs
+====
+doimiy resurs
+====
+ketma-ket resurs
+++++
+Dastur modifikatsiyasi bu:
+====
+#kichik xatolar tuzatilgan dastur kichik o‘zgartirishlar dasturi;
+====
+yangi funktsiya qo‘shilgan dastur;
+====
+ma’lumotlar o‘zgacha tashkil etilgan;
+====
+foydalanuvchi bilan muloqotning yangi usul qo‘llangan dastur
+++++
+Quyidagilardan qaysi biri xost nomlarini xost IP-manziliga solishtirish uchun foydalaniladigan 128-bitli IPv6 manzilini qaytaradi?
+====
+A
+====
+#AAAA
+====
+CNAME
+====
+SOA
+++++
+ Quyidagilardan qaysi biri DNS domen nomini kompyuter tomonidan ishlatiladigan IP manzilga solishtirish uchun ishlatiladi? 
+====
+#A
+====
+AAAA
+====
+CNAME
+====
+SOA
+++++
+Quyidagilardan qaysi biri DNS domen nomini ma'lum bir xizmat turini taklif qiluvchi DNS xost-kompyuterlari ro'yxatiga moslashtirish uchun ishlatiladi?
+====
+A
+====
+AAAA
+====
+#CNAME
+====
+SOA
+++++
+Quyidagilardan qaysi biri kompyuterning IP manzili asosida teskari DNS domen nomini ko'rsatish uchun ishlatiladi?
+====
+A
+====
+AAAA
+====
+PTR
+====
+#SOA
+====
+ Quyidagi fayl tizimlaridan qaysi biri OS yuklash hajmi va ma'lumotlarni saqlash uchun boshqa umumiy ehtiyojlar uchun ishlatiladi?
+====
+#NTFS
+====
+ReFS
+====
+VSS
+====
+ABE
+++++
+ NTFS qanday vazifani bajaradi?
+====
+U tarmoq serverini turli hajmlarga ulaydi.
+====
+#Bu disk kvotalari qo'llab-quvvatlaydi.
+====
+Diskda bo'lim qayerda joylashganligini tekshiradi.
+====
+U disk xususiyatlarini tekshiradi.
+++++
+Guruhlar boshqa guruhlarga a'zo sifatida qo'shilganda quyidagi atamalardan qaysi biri qo'llaniladi?
+====
+#Group nesting
+====
+Group merging
+====
+Group pooling
+====
+Group collection
+++++
