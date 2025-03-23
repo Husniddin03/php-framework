@@ -3,7 +3,9 @@
 namespace vendor\model;
 
 use database\Database;
+use vendor\session\Session;
 
+Session::start();
 abstract class Model extends Database
 {
 
@@ -106,5 +108,16 @@ abstract class Model extends Database
         $stmt = self::$conn->prepare(self::query());
         $stmt->execute();
         return $stmt->fetchAll(\PDO::FETCH_OBJ);
+    }
+
+    public static function auth()
+    {
+        self::check();
+        if (Session::get('user_id') !== null) {
+            $stmt = self::$conn->prepare("SELECT * FROM " . static::$table . " WHERE id = :user_id");
+            $stmt->bindParam(':user_id', Session::get('user_id'));
+            $stmt->execute();
+            return $stmt->fetch(\PDO::FETCH_OBJ) ?? false;
+        }
     }
 }

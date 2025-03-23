@@ -11,7 +11,7 @@ Roud::get('main/about', [MainController::class, 'about']);
 Roud::get('main/index', [MainController::class, 'index']);
 
 Roud::get('quiz/index', [QuizController::class, 'index']);
-Roud::get('quiz/test', [QuizController::class, 'test']);
+Roud::get('quiz/upload', [QuizController::class, 'uploadFile']);
 
 Roud::get('log/index', [LogController::class, 'index']);
 Roud::post('log/login', [LogController::class, 'login']);
