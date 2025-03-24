@@ -50,4 +50,10 @@ class LogController extends Controller
         Session::set('user_id', $user->id);
         return $this->redirect('/main/index');
     }
+
+    public function logout()
+    {
+        Session::destroy();
+        return $this->redirect('/log/index');
+    }
 }

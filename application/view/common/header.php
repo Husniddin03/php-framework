@@ -1,3 +1,9 @@
+<?php
+
+use application\model\User;
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -24,6 +30,13 @@
         </div>
         <div class="nav-actions">
             <button class="search-btn">🔍</button>
-            <a href="/log/index" class="sign-in-btn">Sign In</a>
+            <?php
+            if (User::auth()) {
+                echo '<form action="/log/logout" method="post"><button class="sign-in-btn" type="submit">Logout</button></form>';
+                echo '<a href="/user/logout" class="sign-in-btn">' . User::auth()->name . '</a>';
+            } else {
+                echo '<a href="/log/index" class="sign-in-btn">Sign in</a>';
+            }
+            ?>
         </div>
     </nav>

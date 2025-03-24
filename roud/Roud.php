@@ -18,4 +18,5 @@ Roud::post('quiz/upload', [QuizController::class, 'upload']);
 
 Roud::get('log/index', [LogController::class, 'index']);
 Roud::post('log/login', [LogController::class, 'login']);
+Roud::post('log/logout', [LogController::class, 'logout']);
 Roud::post('log/register', [LogController::class, 'register']);

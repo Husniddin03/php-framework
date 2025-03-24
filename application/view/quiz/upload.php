@@ -17,6 +17,7 @@
         </div>
 
         <p style="color: #888; font-size: 14px;">or</p>
+        <input name="topic" type="text" class="input-url" placeholder="Enter topic">
         <input name="question" type="text" class="input-url" placeholder="Difference in questions">
         <input name="option" type="text" class="input-url" placeholder="Difference in option">
         <input name="correct" type="text" class="input-url" placeholder="Correct answer">
