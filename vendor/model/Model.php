@@ -51,7 +51,7 @@ abstract class Model extends Database
         self::check();
         $stmt = self::$conn->prepare("SELECT * FROM " . static::$table);
         $stmt->execute();
-        return $stmt->fetchAll(\PDO::FETCH_ASSOC);
+        return $stmt->fetchAll(\PDO::FETCH_OBJ);
     }
 
     public static function findOne($id)

@@ -2,6 +2,8 @@
 
 namespace application\controller;
 
+use application\model\Question;
+use application\model\Topic;
 use application\model\User;
 use vendor\controller\Controller;
 use vendor\session\Session;
@@ -30,34 +32,47 @@ class QuizController extends Controller
             return $this->redirect('/log/index');
         }
         if ($this->post()) {
-            $uploadDir = __DIR__ . '/../assets/uploads';
-            if (!is_dir($uploadDir)) {
-                mkdir($uploadDir, 0777, true);
-            }
 
             $fileName = $_FILES['file']['name'];
             $fileTmpName = $_FILES['file']['tmp_name'];
 
             $fileExtension = pathinfo($fileName, PATHINFO_EXTENSION);
 
-            $extensions = ['txt', 'pdf'];
+            $extensions = ['txt'];
 
             $fileSize = $_FILES['file']['size'];
 
             if ($fileSize > 1024 * 1024 || !in_array($fileExtension, $extensions)) {
                 return $this->redirect('quiz/upload');
-            }
-
-            $newFileName = uniqid(time(), true) . $fileExtension;
-
-            $uploadFile = $uploadDir . '/' . $newFileName;
-
-            if (!move_uploaded_file($fileTmpName, $uploadFile)) {
-                return $this->redirect('quiz/upload');
             } else {
-                echo 'Uploaded file ' . $uploadFile;
+                $topic = Topic::create([
+                    'userId' => User::auth()->id,
+                    'theme' => $this->post('topic'),
+                ]);
+                $fileContent = file_get_contents($fileTmpName);
+                $questions = explode("++++", $fileContent);
+                $questions = array_map('trim', $questions);
+                foreach ($questions as $question) {
+                    $option = explode("====", $question);
+                    $option = array_map('trim', $option);
+                    $data = [];
+                    $data['topicId'] = $topic;
+                    foreach ($option as $key => $value) {
+                        $text = trim($value);
+                        if ($key === 0) {
+                            $data['question'] = $text;
+                        } elseif ($text[0] == "#") {
+                            $text = substr($text, 1);
+                            $data['option' . (string)$key] = $text;
+                            $data['answer'] = $text;
+                        } else {
+                            $data['option' . (string)$key] = $text;
+                        }
+                    }
+                    Question::create($data);    
+                }
             }
         }
-        die();
+        return $this->view('/quiz/index', ['data' => Question::getAll()]);
     }
 }

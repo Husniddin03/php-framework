@@ -4,13 +4,12 @@
     <div class="container-quiz">
         <h1>Movie Quiz</h1>
         <div id="" class="text-center jumbotron">
-            <h3 id="question">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat, sunt.</h3>
-            <div class="list">
-                <div class="questions" id="q1">Lorem ipsum dolor sit amet.</div>
-                <div class="questions" id="q1">Lorem ipsum dolor sit amet.</div>
-                <div class="questions" id="q1">Lorem ipsum dolor sit amet.</div>
-                <div class="questions" id="q1">Lorem ipsum dolor sit amet.</div>
-            </div>
+            <?php foreach ($data as $value): ?>
+                <h3 id="question"><?= $value->question ?></h3>
+                <div class="list">
+                    <div class="questions" id="q1"><?= $value->answer ?></div>
+                </div>
+            <?php endforeach; ?>
         </div>
     </div>
 </body>
