@@ -13,11 +13,14 @@ class QuizController extends Controller
     {
         return $this->view('quiz/index');
     }
-    public function uploadFile(){
+    public function uploadFile()
+    {
         return $this->view('quiz/upload');
     }
-    public function upload(){
+    public function upload()
+    {
         echo "<pre>";
-        print_r($_FILES); die();
+        print_r($_FILES);
+        die();
     }
 }
