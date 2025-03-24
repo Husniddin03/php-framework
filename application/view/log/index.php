@@ -1,15 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php $this->view('common/header'); ?>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create an account - AMU</title>
-    <link rel="stylesheet" href="/application/assets/css/log.css">
-</head>
-
-<body>
-    <div class="container">
+<div class="log">
+    <div class="container-log">
         <div class="left-section">
             <div class="logo">AMU</div>
             <a href="#" class="back-link">Back to website →</a>
@@ -95,8 +87,6 @@
 
         </div>
     </div>
+</div>
 
-    <script src="/application/assets/js/log.js"></script>
-</body>
-
-</html>
+<?php $this->view('common/footer'); ?>

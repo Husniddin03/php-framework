@@ -9,6 +9,8 @@ use vendor\global\Roud;
 Roud::get('/', [MainController::class, 'index']);
 Roud::get('main/about', [MainController::class, 'about']);
 Roud::get('main/index', [MainController::class, 'index']);
+Roud::get('main/header', [MainController::class, 'header']);
+Roud::get('main/footer', [MainController::class, 'footer']);
 
 Roud::get('quiz/index', [QuizController::class, 'index']);
 Roud::get('quiz/upload', [QuizController::class, 'uploadFile']);

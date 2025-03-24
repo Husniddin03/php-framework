@@ -1,0 +1,88 @@
+.upload {
+  background: radial-gradient(circle, #1a1a1a, #0d0d0d);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  margin: 0;
+}
+
+.container-fileupload {
+  background: #151515;
+  padding: 25px;
+  margin-top: 6rem;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  width: 380px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.upload-box {
+  border: 2px dashed rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  cursor: pointer;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+}
+
+.upload-box:hover {
+  border-color: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.file-info {
+  background: #222;
+  padding: 12px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: #bbb;
+}
+
+.input-url {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: #222;
+  color: white;
+  border-radius: 8px;
+  margin: 10px 0;
+  outline: none;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 48%;
+  font-size: 14px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.cancel {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.apply {
+  background: linear-gradient(45deg, #ff4b2b, #ff416c);
+  color: white;
+}
+
+.button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}

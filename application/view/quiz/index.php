@@ -1,14 +1,7 @@
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>JS Quiz</title>
-    <link rel="stylesheet" href="https://bootswatch.com/4/slate/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="/application/assets/css/quiz.css">
-
-</head>
+<?php $this->view('common/header'); ?>
 
 <body translate="no">
-    <div class="container">
+    <div class="container-quiz">
         <h1>Movie Quiz</h1>
         <div id="" class="text-center jumbotron">
             <h3 id="question">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat, sunt.</h3>
@@ -21,3 +14,5 @@
         </div>
     </div>
 </body>
+
+<?php $this->view('common/footer'); ?>
