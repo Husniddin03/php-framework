@@ -1,15 +1,15 @@
 <?php $this->view('common/header'); ?>
 
 <div class="upload">
-    <div class="container-fileupload">
+    <form method="post" action="/quiz/upload" class="container-fileupload" enctype="multipart/form-data">
         <h3>Upload Resume & Portfolio</h3>
-        <p style="color: #bbb; font-size: 14px;">Apply for this job in a few clicks by uploading your updated resume and portfolio.</p>
+        <p style="color: #bbb; font-size: 14px; margin-top: 1rem;"></p>
 
         <div class="upload-box" onclick="document.getElementById('fileInput').click()">
             <p>Drag & Drop or <span style="color: #ff416c; text-decoration: underline; cursor: pointer;">Choose file</span></p>
             <p style="font-size: 12px; color: #777;">TXT Max 3.0Mb</p>
         </div>
-        <input accept=".txt" type="file" id="fileInput" style="display: none;" accept="application/txt" onchange="handleFileUpload()">
+        <input name="file" accept=".txt" type="file" id="fileInput" style="display: none;" accept="application/txt" onchange="handleFileUpload()">
 
         <div id="fileInfo" class="file-info" style="display: none;">
             <span id="fileName"></span>
@@ -17,13 +17,14 @@
         </div>
 
         <p style="color: #888; font-size: 14px;">or</p>
-        <input type="text" class="input-url" placeholder="Add file URL here">
+        <input name="question" type="text" class="input-url" placeholder="Difference in questions">
+        <input name="option" type="text" class="input-url" placeholder="Difference in option">
+        <input name="correct" type="text" class="input-url" placeholder="Correct answer">
 
         <div class="buttons">
-            <button class="button cancel">Cancel</button>
-            <button class="button apply">Apply Job</button>
+            <button type="submit" class="button apply">Apply</button>
         </div>
-    </div>
+    </form>
 </div>
 
 <?php $this->view('common/footer'); ?>

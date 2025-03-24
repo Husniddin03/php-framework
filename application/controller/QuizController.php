@@ -16,4 +16,8 @@ class QuizController extends Controller
     public function uploadFile(){
         return $this->view('quiz/upload');
     }
+    public function upload(){
+        echo "<pre>";
+        print_r($_FILES); die();
+    }
 }

@@ -14,6 +14,7 @@ Roud::get('main/footer', [MainController::class, 'footer']);
 
 Roud::get('quiz/index', [QuizController::class, 'index']);
 Roud::get('quiz/upload', [QuizController::class, 'uploadFile']);
+Roud::post('quiz/upload', [QuizController::class, 'upload']);
 
 Roud::get('log/index', [LogController::class, 'index']);
 Roud::post('log/login', [LogController::class, 'login']);
