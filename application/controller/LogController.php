@@ -19,7 +19,7 @@ class LogController extends Controller
         User::validate(
             [
                 $this->post('email') => 'email',
-                $this->post('password') => 'password|min:8|max:32',
+                $this->post('password') => 'min:8|max:32',
             ]
         );
         $user = User::getwhere('email', $this->post('email'));
@@ -38,7 +38,7 @@ class LogController extends Controller
         User::validate(
             [
                 $this->post('name') => 'name|min:3',
-                $this->post('password') => 'password|min:8|max:32',
+                $this->post('password') => 'min:8|max:32',
                 $this->post('email') => 'email',
             ]
         );
@@ -47,7 +47,7 @@ class LogController extends Controller
             'password' => password_hash($this->post('password'), PASSWORD_DEFAULT),
             'email' => $this->post('email'),
         ]);
-        Session::set('user_id', $user->id);
+        Session::set('user_id', $user);
         return $this->redirect('/main/index');
     }
 

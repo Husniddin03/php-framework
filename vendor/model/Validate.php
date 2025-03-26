@@ -36,10 +36,6 @@ trait Validate
     {
         return filter_var($email, FILTER_VALIDATE_EMAIL);
     }
-    public static function password($password)
-    {
-        return preg_match('/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/', $password);
-    }
     public static function confirmPassword($password, $confirmPassword)
     {
         return $password === $confirmPassword;

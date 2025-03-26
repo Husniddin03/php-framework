@@ -22,18 +22,18 @@ use application\model\User;
     <nav class="navbar">
         <div class="logo">Bp</div>
         <div class="nav-menu">
-            <div class="nav-item active">Compositions</div>
-            <div class="nav-item">Web</div>
-            <div class="nav-item">Mobile</div>
-            <div class="nav-item">Components</div>
-            <div class="nav-item">Assets</div>
+            <a href="/" class="nav-item active">Home</a>
+            <a href="/quiz/index" class="nav-item">My quiz</a>
+            <a href="#" class="nav-item">All quiz</a>
+            <a href="#" class="nav-item">Components</a>
+            <a href="#" class="nav-item">Assets</a>
         </div>
         <div class="nav-actions">
-            <button class="search-btn">🔍</button>
+            <button class="search-btn" style="display: flex; align-items: center; padding: 0rem 1rem;"><input style="padding: 0.5rem 1rem; border: none; margin: 0;" type="text">🔍</button>
             <?php
             if (User::auth()) {
                 echo '<form action="/log/logout" method="post"><button class="sign-in-btn" type="submit">Logout</button></form>';
-                echo '<a href="/user/logout" class="sign-in-btn">' . User::auth()->name . '</a>';
+                echo '<a href="/user/profil" class="sign-in-btn">' . User::auth()->name . '</a>';
             } else {
                 echo '<a href="/log/index" class="sign-in-btn">Sign in</a>';
             }
