@@ -22,9 +22,9 @@ use application\model\User;
     <nav class="navbar">
         <div class="logo">Bp</div>
         <div class="nav-menu">
-            <a href="/" class="nav-item active">Home</a>
+            <a href="/" class="nav-item">Home</a>
             <a href="/quiz/index" class="nav-item">My quiz</a>
-            <a href="#" class="nav-item">All quiz</a>
+            <a href="/quiz/all" class="nav-item">All quiz</a>
             <a href="#" class="nav-item">Components</a>
             <a href="#" class="nav-item">Assets</a>
         </div>

@@ -59,7 +59,7 @@ abstract class Model extends Database
         self::check();
         $stmt = self::$conn->prepare("SELECT * FROM " . static::$table . " WHERE id = " . $id);
         $stmt->execute();
-        return $stmt->fetchAll(\PDO::FETCH_ASSOC);
+        return $stmt->fetch(\PDO::FETCH_OBJ);
     }
 
     public static function findName($column, $name)
@@ -68,7 +68,7 @@ abstract class Model extends Database
         $stmt = self::$conn->prepare("SELECT * FROM " . static::$table . " WHERE $column = :name");
         $stmt->bindParam('name', $name);
         $stmt->execute();
-        return $stmt->fetchAll(\PDO::FETCH_ASSOC);
+        return $stmt->fetchAll(\PDO::FETCH_OBJ);
     }
 
     public static function create($data)

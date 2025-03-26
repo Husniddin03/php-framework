@@ -18,8 +18,22 @@ class QuizController extends Controller
         if (!User::auth()) {
             return $this->redirect('/log/index');
         }
-        
-        return $this->view('quiz/index');
+        $quizzes = Topic::findName('userId', User::auth()->id);
+        return $this->view('quiz/index', ['quizzes' => $quizzes]);
+    }
+
+    public function all()
+    {
+        if (!User::auth()) {
+            return $this->redirect('/log/index');
+        }
+        $data = Topic::getAll();
+        $quizzes = [];
+
+        foreach ($data as $item) {
+            $quizzes[$item->userId][] = $item;
+        }
+        return $this->view('quiz/all', ['quizzes' => $quizzes]);
     }
 
     public function test()
@@ -108,6 +122,6 @@ class QuizController extends Controller
                 }
             }
         }
-        return $this->view('/quiz/index');
+        return $this->redirect('/quiz/index');
     }
 }
