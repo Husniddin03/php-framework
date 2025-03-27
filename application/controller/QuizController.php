@@ -41,8 +41,9 @@ class QuizController extends Controller
         if (!User::auth()) {
             return $this->redirect('/log/index');
         }
-        $question = Question::getAll();
-        return $this->view('quiz/index', ['data' => $question]);
+        $topic = Topic::select('*')->where('id = ' . $this->get('id'))->get();
+        $question = Question::select('*')->where('topicId = ' . $topic->id)->all();
+        return $this->view('quiz/test', ['data' => $question]);
     }
 
     public function answerCheck()

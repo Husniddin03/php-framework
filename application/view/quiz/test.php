@@ -10,7 +10,8 @@
                     <?php
                     foreach ($value as $key => $question) {
                         if ($question !== null && strpos($key, 'option') !== false) {
-                            echo '<div class="questions" id="q' . $item . $key . '">' . $question . '</div>';
+                            $correct = $value->answer == $question ? 'correct' : null;
+                            echo '<div class="questions ' . $correct . '" id="q' . $item . $key . '">' . $question . '</div>';
                         }
                     }
                     ?>
@@ -18,10 +19,6 @@
             <?php endforeach; ?>
         </div>
     </div>
-
-    <script>
-        
-    </script>
 </body>
 
 <?php $this->view('common/footer'); ?>

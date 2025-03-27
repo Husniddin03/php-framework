@@ -107,6 +107,14 @@ abstract class Model extends Database
         self::check();
         $stmt = self::$conn->prepare(self::query());
         $stmt->execute();
+        return $stmt->fetch(\PDO::FETCH_OBJ);
+    }
+
+    public static function all()
+    {
+        self::check();
+        $stmt = self::$conn->prepare(self::query());
+        $stmt->execute();
         return $stmt->fetchAll(\PDO::FETCH_OBJ);
     }
 
