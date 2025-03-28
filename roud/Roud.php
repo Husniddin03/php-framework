@@ -18,6 +18,7 @@ Roud::post('quiz/upload', [QuizController::class, 'upload']);
 Roud::post('quiz/answerCheck', [QuizController::class, 'answerCheck']);
 Roud::get('quiz/test', [QuizController::class, 'test']);
 Roud::get('quiz/all', [QuizController::class, 'all']);
+Roud::get('quiz/form', [QuizController::class, 'form']);
 
 Roud::get('log/index', [LogController::class, 'index']);
 Roud::post('log/login', [LogController::class, 'login']);
