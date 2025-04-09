@@ -22,4 +22,10 @@ class Controller
         header("Location: $path");
         exit();
     }
+
+    public function back()
+    {
+        header("Location: " . $_SERVER['HTTP_REFERER']);
+        exit();
+    }
 }

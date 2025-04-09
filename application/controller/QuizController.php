@@ -51,7 +51,16 @@ class QuizController extends Controller
         if (!User::auth()) {
             return $this->redirect('/log/index');
         }
-        return $this->view('quiz/form');
+        $id = $this->get('id');
+        $topicName = Topic::select('*')->where('id = ' . $id)->get();
+        if (!$topicName) {
+            return $this->back();
+        }
+        $count = Question::countId('topicId', $id);
+        if ($count == 0) {
+            return $this->back();
+        }
+        return $this->view('quiz/form', ['count' => $count, 'topicName' => $topicName]);
     }
 
     public function quiz()
@@ -63,8 +72,16 @@ class QuizController extends Controller
         echo "<pre>";
         print_r($this->post());
         die();
+
         $topic = Topic::select('*')->where('id = ' . $this->get('id'))->get();
-        return $this->view('quiz/quiz', ['data' => $topic]);
+        return $this->view('quiz/exam', ['data' => $topic]);
+    }
+
+    public function exam()
+    {
+        if (!User::auth()) {
+            return $this->redirect('/log/index');
+        }
     }
 
     public function answerCheck()

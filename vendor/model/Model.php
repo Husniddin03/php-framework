@@ -54,6 +54,23 @@ abstract class Model extends Database
         return $stmt->fetchAll(\PDO::FETCH_OBJ);
     }
 
+    public static function count()
+    {
+        self::check();
+        $stmt = self::$conn->prepare("SELECT COUNT(*) as count FROM " . static::$table);
+        $stmt->execute();
+        return $stmt->fetch(\PDO::FETCH_OBJ)->count;
+    }
+
+    public static function countId($name, $value)
+    {
+        self::check();
+        $stmt = self::$conn->prepare("SELECT COUNT(*) as count FROM " . static::$table . " WHERE $name = :value");
+        $stmt->bindParam('value', $value);
+        $stmt->execute();
+        return $stmt->fetch(\PDO::FETCH_OBJ)->count;
+    }
+
     public static function findOne($id)
     {
         self::check();
