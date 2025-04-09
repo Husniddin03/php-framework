@@ -3,18 +3,22 @@
 <div class="test-form">
     <div class="container-quiz-form">
         <h2>Test Settings</h2>
-        <form id="testForm">
+        <form id="testForm" action="/quiz/quiz" method="post">
             <div class="form-group">
                 <label for="testCount">Number of Tests:</label>
-                <input type="number" id="testCount" min="1" placeholder="Enter number of tests" required>
+                <input name="number" type="number" id="testCount" min="1" placeholder="Enter number of tests" required>
+            </div>
+            <div class="form-group">
+                <label for="testCount">Number of Tests:</label>
+                <input name="number" type="number" id="testCount" min="1" placeholder="Enter number of tests" required>
             </div>
             <div class="form-group">
                 <label for="timePerTest">Time per Test (minutes):</label>
-                <input type="number" id="timePerTest" min="1" placeholder="Enter time per test" required>
+                <input name="time" type="number" id="timePerTest" min="1" placeholder="Enter time per test" required>
             </div>
             <div class="form-group">
                 <label for="testType">Test Type:</label>
-                <select id="testType" required>
+                <select name="type" id="testType" required>
                     <option value="mcq">Multiple Choice</option>
                     <option value="written">Written</option>
                     <option value="mixed">Mixed</option>

@@ -54,6 +54,19 @@ class QuizController extends Controller
         return $this->view('quiz/form');
     }
 
+    public function quiz()
+    {
+        if (!User::auth()) {
+            return $this->redirect('/log/index');
+        }
+
+        echo "<pre>";
+        print_r($this->post());
+        die();
+        $topic = Topic::select('*')->where('id = ' . $this->get('id'))->get();
+        return $this->view('quiz/quiz', ['data' => $topic]);
+    }
+
     public function answerCheck()
     {
         if (!User::auth()) {
