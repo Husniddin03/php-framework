@@ -69,12 +69,19 @@ class QuizController extends Controller
             return $this->redirect('/log/index');
         }
 
-        echo "<pre>";
-        print_r($this->post());
-        die();
+        $topic = Topic::select('*')->where('id = ' . $this->post('topicId'))->get();
 
-        $topic = Topic::select('*')->where('id = ' . $this->get('id'))->get();
-        return $this->view('quiz/exam', ['data' => $topic]);
+        if (!$topic) {
+            return $this->back();
+        }
+
+        $question = Question::select('*')->where('topicId = ' . $topic->id)->limit($this->post('start'), $this->post('number'))->all();
+
+        if (!$question) {
+            return $this->back();
+        }
+
+        return $this->view('quiz/exam', ['topic' => $topic, 'question' => $question, 'time' => $this->post('time'), 'type' => $this->post('type')]);
     }
 
     public function exam()

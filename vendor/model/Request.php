@@ -57,7 +57,7 @@ trait Request
 
     public static function limit($limit, $offset = 0)
     {
-        self::$params[__FUNCTION__] = "LIMIT $limit $offset";
+        self::$params[__FUNCTION__] = "LIMIT $limit, $offset";
         return new static;
     }
 

@@ -3,7 +3,7 @@
 <div class="test-form">
     <div class="container-quiz-form">
         <form id="testForm" action="/quiz/quiz" method="post">
-            <h2><input hidden disabled type="number" name="topicId" value="<?= $topicName->id ?>"><?= $topicName->theme ?></h2>
+            <h2><input hidden type="number" name="topicId" value="<?= $topicName->id ?>"><?= $topicName->theme ?></h2>
 
             <div class="toggle-group">
                 <input type="radio" id="startFromBeginning" name="order" value="beginning" checked>
