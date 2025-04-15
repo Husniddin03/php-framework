@@ -1,43 +1,54 @@
 <?php $this->view('common/header'); ?>
 
-<div class="exam">
+<form action="/quiz/check" method="post" class="exam">
     <div class="header-exam">1-ma'ruza mashg'uloti.</div>
 
     <div class="main-exam">
         <div class="left-section-exam">
-            <div class="card-exam">
-                <p>1. Какой элемент компьютерной системы используется для временного хранения данных?</p>
-                <label><input type="radio" name="q1" onclick="selectAnswer(1)"> I/O</label>
-                <label><input type="radio" name="q1" onclick="selectAnswer(1)"> CPU</label>
-                <label><input type="radio" name="q1" onclick="selectAnswer(1)"> RAM</label>
-                <label><input type="radio" name="q1" onclick="selectAnswer(1)"> ROM</label>
-            </div>
+            <?php foreach ($question as $key => $value): ?>
+
+                <div class="card-exam">
+                    <p id="question<?= $key + 1 ?>"><?= $key + 1 . ". " . $value->question ?></p>
+
+                    <?php
+                    for ($i = 1; $i <= 10; $i++) {
+                        if ($value->{'option' . $i} == null) {
+                            break;
+                        } else {
+                            echo '<label><input type="radio" name="q' . $value->id . '" onclick="selectAnswer(' . $key + 1 . ')">' . $value->{'option' . $i} . '</label>';
+                        }
+                    }
+                    ?>
+                </div>
+
+            <?php endforeach; ?>
         </div>
 
         <div class="right-section-exam">
             <div class="answer-box">
                 <p class="answer-title">Javoblar</p>
                 <div class="circles">
-                    <span class="circle" id="c1">1</span>
-                    <span class="circle" id="c2">2</span>
-                    <span class="circle" id="c3">3</span>
-                    <span class="circle" id="c4">4</span>
-                    <span class="circle" id="c5">5</span>
-                    <span class="circle" id="c6">6</span>
+
+                    <?php
+                    for ($i = 1; $i <= count($question); $i++) {
+                        echo '<a href="#question' . $i . '" style="color:black;" class="circle" id="c' . $i . '">' . $i . '</a>';
+                    }
+                    ?>
+
                 </div>
-                <button class="finish-btn-exam">Yakunlash</button>
+                <button type="submit" class="finish-btn-exam">Yakunlash</button>
             </div>
         </div>
     </div>
 
     <script>
-        function selectAnswer(questionNum) {
+        function selectAnswer(questionNum, name) {
             const circle = document.getElementById('c' + questionNum);
             if (circle) {
                 circle.classList.add('active-exam');
             }
         }
     </script>
-</div>
+</form>
 
 <?php $this->view('common/footer'); ?>

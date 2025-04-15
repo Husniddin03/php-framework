@@ -84,6 +84,13 @@ class QuizController extends Controller
         return $this->view('quiz/exam', ['topic' => $topic, 'question' => $question, 'time' => $this->post('time'), 'type' => $this->post('type')]);
     }
 
+    public function check()
+    {
+        echo "<pre>";
+        print_r($this->post());
+        die();
+    }
+
     public function exam()
     {
         if (!User::auth()) {
