@@ -88,6 +88,8 @@ class QuizController extends Controller
     {
         echo "<pre>";
         print_r($this->post());
+        $questions = unserialize(base64_decode($this->post('answers')));
+        print_r($questions);
         die();
     }
 

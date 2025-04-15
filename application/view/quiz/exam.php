@@ -2,6 +2,7 @@
 
 <form action="/quiz/check" method="post" class="exam">
     <div class="header-exam">1-ma'ruza mashg'uloti.</div>
+    <input type="hidden" name="answers" value="<?= base64_encode(serialize($question)) ?>">
 
     <div class="main-exam">
         <div class="left-section-exam">
@@ -15,7 +16,7 @@
                         if ($value->{'option' . $i} == null) {
                             break;
                         } else {
-                            echo '<label><input type="radio" name="q' . $value->id . '" onclick="selectAnswer(' . $key + 1 . ')">' . $value->{'option' . $i} . '</label>';
+                            echo '<label><input value="' . $value->{'option' . $i} . '" type="radio" name="' . $value->id . '" onclick="selectAnswer(' . $key + 1 . ')">' . $value->{'option' . $i} . '</label>';
                         }
                     }
                     ?>
