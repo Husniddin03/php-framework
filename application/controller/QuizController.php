@@ -86,11 +86,32 @@ class QuizController extends Controller
 
     public function check()
     {
-        echo "<pre>";
-        print_r($this->post());
+        $result = [];
         $questions = unserialize(base64_decode($this->post('answers')));
-        print_r($questions);
-        die();
+        foreach ($questions as $value) {
+            $trash = [];
+            $trash['question'] = $value->question;
+            $trash['answer'] = $value->answer;
+
+            if ($this->post($value->id) !== null) {
+                $userAnswer = $this->post($value->id);
+                if ($userAnswer == $value->answer) {
+                    $trash['useranswer'] = $userAnswer;
+                } else {
+                    $trash['useranswer'] = $userAnswer;
+                }
+            } else {
+                $trash['useranswer'] = "Tanlanmagan!";
+            }
+            $result[] = $trash;
+        }
+
+        return $this->view('/quiz/answer', ['result' => $result]);
+    }
+
+    public function answer()
+    {
+        return $this->view('/quiz/answer');
     }
 
     public function exam()
