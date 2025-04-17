@@ -24,6 +24,7 @@ Roud::get('quiz/all', [QuizController::class, 'all']);
 Roud::get('quiz/form', [QuizController::class, 'form']);
 Roud::get('quiz/exam', [QuizController::class, 'exam']);
 Roud::get('quiz/answer', [QuizController::class, 'answer']);
+Roud::get('quiz/single', [QuizController::class, 'single']);
 
 Roud::get('log/index', [LogController::class, 'index']);
 Roud::post('log/login', [LogController::class, 'login']);

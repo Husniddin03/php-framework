@@ -128,6 +128,4 @@
     });
 </script>
 
-
-
 <?php $this->view('common/footer'); ?>

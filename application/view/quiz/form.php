@@ -14,7 +14,7 @@
 
             <div class="form-group">
                 <label for="testStart">Test start:</label>
-                <input name="start" type="number" id="testStart" min="1" max="<?= $count ?>" placeholder="Test start" required>
+                <input value="1" name="start" type="number" id="testStart" min="1" max="<?= $count ?>" placeholder="Test start" required>
             </div>
 
             <div class="form-group">
@@ -23,7 +23,7 @@
             </div>
 
             <div class="form-group">
-                <label for="timePerTest">Time per Test (minutes):</label>
+                <label for="timePerTest">Time per Test (seconds):</label>
                 <input name="time" type="number" id="timePerTest" min="1" placeholder="Enter time per test" required>
             </div>
 

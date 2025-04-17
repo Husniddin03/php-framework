@@ -75,13 +75,30 @@ class QuizController extends Controller
             return $this->back();
         }
 
-        $question = Question::select('*')->where('topicId = ' . $topic->id)->limit($this->post('start'), $this->post('number'))->all();
-
+        if ($this->post('order') == 'shuffle') {
+            $question = Question::select('*')->where('topicId = ' . $topic->id)->all();
+            shuffle($question);
+            $question = array_slice($question, $this->post('start') - 1, $this->post('number'));
+        } else {
+            $question = Question::select('*')->where('topicId = ' . $topic->id)->limit($this->post('start'), $this->post('number'))->all();
+        }
         if (!$question) {
             return $this->back();
         }
 
-        return $this->view('quiz/exam', ['topic' => $topic, 'question' => $question, 'time' => $this->post('time'), 'type' => $this->post('type')]);
+        if ($this->post('type') == 'immediately') {
+            return $this->view('quiz/single', ['topic' => $topic, 'question' => $question, 'time' => $this->post('time'), 'type' => $this->post('type')]);
+        } else {
+            return $this->view('quiz/exam', ['topic' => $topic, 'question' => $question, 'time' => $this->post('time'), 'type' => $this->post('type')]);
+        }
+    }
+
+    public function single()
+    {
+        if (!User::auth()) {
+            return $this->redirect('/log/index');
+        }
+        return $this->view('quiz/single');
     }
 
     public function check()
