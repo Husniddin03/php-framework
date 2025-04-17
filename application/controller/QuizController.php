@@ -86,11 +86,18 @@ class QuizController extends Controller
 
     public function check()
     {
+        if (!User::auth()) {
+            return $this->redirect('/log/index');
+        }
         $result = [];
+        $topic = null;
         $questions = unserialize(base64_decode($this->post('answers')));
         foreach ($questions as $value) {
             $trash = [];
             $trash['question'] = $value->question;
+            if ($topic == null) {
+                $topic = Topic::select('*')->where('id = ' . $value->topicId)->get()->theme;
+            }
             $trash['answer'] = $value->answer;
 
             if ($this->post($value->id) !== null) {
@@ -106,7 +113,7 @@ class QuizController extends Controller
             $result[] = $trash;
         }
 
-        return $this->view('/quiz/answer', ['result' => $result]);
+        return $this->view('/quiz/answer', ['result' => $result, 'topic' => $topic]);
     }
 
     public function answer()

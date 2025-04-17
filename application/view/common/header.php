@@ -30,7 +30,22 @@ use application\model\User;
             <a href="#" class="nav-item">Assets</a>
         </div>
         <div class="nav-actions">
-            <button class="search-btn" style="display: flex; align-items: center; padding: 0rem 1rem;"><input style="padding: 0.5rem 1rem; border: none; margin: 0;" type="text">🔍</button>
+            <div class="search-btn-code">
+                <button onclick="modemain()" class="search-btn">🔍</button>
+                <div class="custom-model-main">
+                    <div class="custom-model-inner">
+                        <div onclick="closemode()" class="close-btn">×</div>
+                        <div class="custom-model-wrap">
+                            <form>
+                                <input type="text" onkeyup="showResult(this.value)">
+                                <div class="pop-up-content-wrap" id="livesearch"></div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="bg-overlay"></div>
+                </div>
+            </div>
+
             <?php
             if (User::auth()) {
                 echo '<form action="/log/logout" method="post"><button class="sign-in-btn" type="submit">Logout</button></form>';

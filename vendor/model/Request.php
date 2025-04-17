@@ -61,6 +61,12 @@ trait Request
         return new static;
     }
 
+    public static function like($column, $value)
+    {
+        self::$params[__FUNCTION__] = "WHERE $column LIKE '%$value%'";
+        return new static;
+    }
+
     public static function join($table, $condition)
     {
         self::$params[__FUNCTION__] = "JOIN $table ON $condition";

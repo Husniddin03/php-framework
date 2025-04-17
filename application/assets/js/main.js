@@ -53,3 +53,31 @@ hexagon.addEventListener('mouseleave', () => {
     hexagon.style.transform = 'rotate(30deg)';
 });
 });
+
+
+
+function modemain() {
+    document.querySelector(".custom-model-main").classList.add("model-open");
+}
+
+function closemode() {
+    document.querySelector(".custom-model-main").classList.remove("model-open");
+}
+
+
+function showResult(str) {
+    if (str.length==0) {
+      document.getElementById("livesearch").innerHTML="";
+      document.getElementById("livesearch").style.border="0px";
+      return;
+    }
+    var xmlhttp=new XMLHttpRequest();
+    xmlhttp.onreadystatechange=function() {
+      if (this.readyState==4 && this.status==200) {
+        document.getElementById("livesearch").innerHTML=this.responseText;
+        document.getElementById("livesearch").style.border="1px solid #A5ACB2";
+      }
+    }
+    xmlhttp.open("GET","/main/search?search="+str,true);
+    xmlhttp.send();
+  }

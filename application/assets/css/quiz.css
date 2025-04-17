@@ -294,8 +294,15 @@
 
 .answer-title {
   font-weight: 700;
+  display: flex;
+  justify-content: space-around;
   margin-bottom: 16px;
   font-size: 18px;
+}
+
+.exam-lable{
+  font-weight: 600;
+  margin-bottom: 8px;
 }
 
 .circles {
@@ -348,4 +355,11 @@
   .right-section-exam {
     margin-top: 20px;
   }
+}
+
+
+.pratsent{
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center;
 }
