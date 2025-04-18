@@ -98,7 +98,6 @@ class QuizController extends Controller
         if (!User::auth()) {
             return $this->redirect('/log/index');
         }
-        return $this->view('quiz/single');
     }
 
     public function check()
@@ -223,5 +222,13 @@ class QuizController extends Controller
             }
         }
         return $this->redirect('/quiz/index');
+    }
+
+    public function pase()
+    {
+        if (!User::auth()) {
+            return $this->redirect('/log/index');
+        }
+        return $this->view('quiz/pase');
     }
 }

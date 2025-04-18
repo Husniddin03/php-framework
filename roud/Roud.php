@@ -15,6 +15,7 @@ Roud::get('main/search', [MainController::class, 'search']);
 
 Roud::get('quiz/index', [QuizController::class, 'index']);
 Roud::get('quiz/upload', [QuizController::class, 'uploadFile']);
+Roud::get('quiz/pase', [QuizController::class, 'pase']);
 Roud::post('quiz/upload', [QuizController::class, 'upload']);
 Roud::post('quiz/quiz', [QuizController::class, 'quiz']);
 Roud::post('quiz/check', [QuizController::class, 'check']);

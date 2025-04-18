@@ -1,15 +1,9 @@
 <?php $this->view('common/header'); ?>
 
 <div class="upload">
-    <form method="post" action="/quiz/upload" class="container-fileupload" enctype="multipart/form-data">
-        <h3>Upload Resume & Portfolio</h3>
-        <p style="color: #bbb; font-size: 14px; margin-top: 1rem;"></p>
+    <form method="post" style="width: 50rem;" action="/quiz/upload" class="container-fileupload" enctype="multipart/form-data">
 
-        <div class="upload-box" onclick="document.getElementById('fileInput').click()">
-            <p>Drag & Drop or <span style="color: #ff416c; text-decoration: underline; cursor: pointer;">Choose file</span></p>
-            <p style="font-size: 12px; color: #777;">TXT Max 3.0Mb</p>
-        </div>
-        <input name="file" accept=".txt" type="file" id="fileInput" style="display: none;" accept="application/txt" onchange="handleFileUpload()">
+        <textarea name="pase" type="text" class="textarea-box" placeholder="Enter topic"></textarea>
 
         <div id="fileInfo" class="file-info" style="display: none;">
             <span id="fileName"></span>
