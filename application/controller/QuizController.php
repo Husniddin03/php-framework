@@ -180,24 +180,29 @@ class QuizController extends Controller
             return $this->redirect('/log/index');
         }
         if ($this->post()) {
+            if ($this->post('pase') == null) {
+                $fileName = $_FILES['file']['name'];
+                $fileTmpName = $_FILES['file']['tmp_name'];
 
-            $fileName = $_FILES['file']['name'];
-            $fileTmpName = $_FILES['file']['tmp_name'];
+                $fileExtension = pathinfo($fileName, PATHINFO_EXTENSION);
 
-            $fileExtension = pathinfo($fileName, PATHINFO_EXTENSION);
+                $extensions = ['txt'];
 
-            $extensions = ['txt'];
+                $fileSize = $_FILES['file']['size'];
+            }
 
-            $fileSize = $_FILES['file']['size'];
-
-            if ($fileSize > 1024 * 1024 || !in_array($fileExtension, $extensions)) {
+            if ($this->post('pase') == null && ($fileSize > 1024 * 1024 || !in_array($fileExtension, $extensions))) {
                 return $this->redirect('quiz/upload');
             } else {
                 $topic = Topic::create([
                     'userId' => User::auth()->id,
                     'theme' => $this->post('topic'),
                 ]);
-                $fileContent = file_get_contents($fileTmpName);
+                if ($this->post('pase') == null) {
+                    $fileContent = file_get_contents($fileTmpName);
+                } else {
+                    $fileContent = $this->post('pase');
+                }
                 $questions = explode($this->post('question'), $fileContent);
                 $questions = array_map('trim', $questions);
                 foreach ($questions as $question) {
@@ -230,5 +235,38 @@ class QuizController extends Controller
             return $this->redirect('/log/index');
         }
         return $this->view('quiz/pase');
+    }
+
+    public function write()
+    {
+        if (!User::auth()) {
+            return $this->redirect('/log/index');
+        }
+        return $this->view('quiz/write', ['topic' => null]);
+    }
+
+    public function create()
+    {
+        if (!User::auth()) {
+            return $this->redirect('/log/index');
+        }
+
+        if ($this->post('topic') !== null) {
+            $topic = Topic::create([
+                'userId' => User::auth()->id,
+                'theme' => $this->post('topic'),
+            ]);
+        }
+
+        if ($this->post('question') !== null) {
+            $data = [];
+            foreach ($this->post() as $key => $value) {
+                $data[$key] = $value;
+            }
+
+            $question = Question::create($data);
+            die($question);
+        }
+        return $this->view('quiz/write', ['topic' => $topic]);
     }
 }

@@ -5,11 +5,6 @@
 
         <textarea name="pase" type="text" class="textarea-box" placeholder="Enter topic"></textarea>
 
-        <div id="fileInfo" class="file-info" style="display: none;">
-            <span id="fileName"></span>
-            <span id="fileSize"></span>
-        </div>
-
         <input name="topic" type="text" class="input-url" placeholder="Enter topic">
         <input name="question" type="text" class="input-url" placeholder="Difference in questions">
         <input name="option" type="text" class="input-url" placeholder="Difference in option">

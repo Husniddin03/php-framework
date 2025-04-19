@@ -19,6 +19,7 @@ Roud::get('quiz/pase', [QuizController::class, 'pase']);
 Roud::post('quiz/upload', [QuizController::class, 'upload']);
 Roud::post('quiz/quiz', [QuizController::class, 'quiz']);
 Roud::post('quiz/check', [QuizController::class, 'check']);
+Roud::post('quiz/create', [QuizController::class, 'create']);
 Roud::post('quiz/answerCheck', [QuizController::class, 'answerCheck']);
 Roud::get('quiz/test', [QuizController::class, 'test']);
 Roud::get('quiz/all', [QuizController::class, 'all']);
@@ -26,6 +27,7 @@ Roud::get('quiz/form', [QuizController::class, 'form']);
 Roud::get('quiz/exam', [QuizController::class, 'exam']);
 Roud::get('quiz/answer', [QuizController::class, 'answer']);
 Roud::get('quiz/single', [QuizController::class, 'single']);
+Roud::get('quiz/write', [QuizController::class, 'write']);
 
 Roud::get('log/index', [LogController::class, 'index']);
 Roud::post('log/login', [LogController::class, 'login']);
