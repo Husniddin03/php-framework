@@ -26,8 +26,6 @@ use application\model\User;
             <a href="/" class="nav-item">Home</a>
             <a href="/quiz/index" class="nav-item">My quiz</a>
             <a href="/quiz/all" class="nav-item">All quiz</a>
-            <a href="#" class="nav-item">Components</a>
-            <a href="#" class="nav-item">Assets</a>
         </div>
         <div class="nav-actions">
             <div class="search-btn-code">
@@ -49,7 +47,7 @@ use application\model\User;
             <?php
             if (User::auth()) {
                 echo '<form action="/log/logout" method="post"><button class="sign-in-btn" type="submit">Logout</button></form>';
-                echo '<a href="/user/profil" class="sign-in-btn">' . User::auth()->name . '</a>';
+                echo '<a href="#" class="sign-in-btn">' . User::auth()->name . '</a>';
             } else {
                 echo '<a href="/log/index" class="sign-in-btn">Sign in</a>';
             }
