@@ -2,8 +2,6 @@
 
 namespace vendor\controller;
 
-use application\model\User;
-use Dom\ChildNode;
 use vendor\session\Session;
 
 Session::start();
@@ -17,7 +15,7 @@ class Controller
         require "application/view/$path.php";
     }
 
-    public function redirect($path)
+    public function redirect($path, $data = [])
     {
         header("Location: $path");
         exit();

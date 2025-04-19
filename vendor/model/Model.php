@@ -99,9 +99,24 @@ abstract class Model extends Database
     public static function update($id, $data)
     {
         self::check();
-        $stmt = self::$conn->prepare("UPDATE " . static::$table . " SET " . implode('=?,', array_keys($data)) . "=? WHERE id = " . $id);
-        $stmt->execute(array_values($data));
+
+        // "key=?" formatidagi array hosil qilamiz
+        $fields = implode(', ', array_map(function ($key) {
+            return "$key = ?";
+        }, array_keys($data)));
+
+        // Tayyor SQL
+        $sql = "UPDATE " . static::$table . " SET $fields WHERE id = ?";
+
+        $stmt = self::$conn->prepare($sql);
+
+        // Parametrlar: $data qiymatlari + $id
+        $params = array_values($data);
+        $params[] = $id;
+
+        $stmt->execute($params);
     }
+
 
     public static function delete($id)
     {

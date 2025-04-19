@@ -242,7 +242,7 @@ class QuizController extends Controller
         if (!User::auth()) {
             return $this->redirect('/log/index');
         }
-        return $this->view('quiz/write', ['topic' => null]);
+        return $this->view('quiz/write', ['topic' => 'open']);
     }
 
     public function create()
@@ -256,17 +256,97 @@ class QuizController extends Controller
                 'userId' => User::auth()->id,
                 'theme' => $this->post('topic'),
             ]);
+
+            $topicName = $this->post('topic');
         }
 
         if ($this->post('question') !== null) {
+            $questionId = Question::countId('topicId', $this->post('id'));
             $data = [];
-            foreach ($this->post() as $key => $value) {
-                $data[$key] = $value;
+            $topic = $this->post('id');
+            $data = [
+                'topicId' => $this->post('id'),
+                'question' => $this->post('question'),
+                'answer' => $this->post('option' . $this->post('answer')),
+            ];
+
+            for ($i = 1; $i <= 10; $i++) {
+                $optKey = 'option' . $i;
+                if ($this->post($optKey) !== null) {
+                    $data[$optKey] = $this->post($optKey);
+                }
             }
 
-            $question = Question::create($data);
-            die($question);
+
+            Question::create($data);
         }
-        return $this->view('quiz/write', ['topic' => $topic]);
+        return $this->view('quiz/write', ['id' => $topic, 'topic' => $topicName, 'questionId' => $questionId]);
+    }
+
+    public function edit()
+    {
+        $id = $this->get('id');
+        if (!User::auth() || Topic::getwhere('id', $id)->userId !== User::auth()->id) {
+            return $this->back();
+        }
+        $questions = Question::select('*')->where('topicId = ' . $id)->all();
+        $topicName = Topic::getwhere('id', $id)->theme;
+        if (!$questions) {
+            return $this->back();
+        }
+        return $this->view('quiz/edit', ['questions' => $questions, 'topic' => $topicName]);
+    }
+
+    public function ques_edit()
+    {
+        $id = $this->get('id');
+        if (!User::auth() || Topic::getwhere('id', $id)->userId !== User::auth()->id) {
+            return $this->back();
+        }
+        $questions = Question::select('*')->where('id = ' . $this->get('question'))->get();
+        if (!$questions) {
+            return $this->back();
+        }
+        return $this->view('quiz/ques_edit', ['questions' => $questions, 'id' => $id]);
+    }
+    public function editTools()
+    {
+        $id = $this->post('id');
+        if (!User::auth() || Topic::getwhere('id', $id)->userId !== User::auth()->id) {
+            return $this->back();
+        }
+        $data = [];
+        foreach ($this->post() as $key => $value) {
+            if ($key !== 'id' && $key !== 'questionId') {
+                $data[$key] = $value;
+            }
+        }
+        Question::update($this->post('questionId'), $data);
+
+        $questions = Question::select('*')->where('topicId = ' . $id)->all();
+        $topicName = Topic::getwhere('id', $id)->theme;
+        return $this->view('quiz/edit', ['questions' => $questions, 'topic' => $topicName]);
+    }
+
+    public function delete()
+    {
+        if (!User::auth()) {
+            return $this->redirect('/log/index');
+        }
+        $id = $this->post('questionId');
+
+        Question::delete($id);
+        return $this->back();
+    }
+
+    public function deleteTopic()
+    {
+        if (!User::auth()) {
+            return $this->redirect('/log/index');
+        }
+        $id = $this->post('id');
+
+        Topic::delete($id);
+        return $this->back();
     }
 }

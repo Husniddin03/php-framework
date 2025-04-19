@@ -28,6 +28,12 @@ Roud::get('quiz/exam', [QuizController::class, 'exam']);
 Roud::get('quiz/answer', [QuizController::class, 'answer']);
 Roud::get('quiz/single', [QuizController::class, 'single']);
 Roud::get('quiz/write', [QuizController::class, 'write']);
+Roud::get('quiz/edit', [QuizController::class, 'edit']);
+Roud::get('quiz/ques_edit', [QuizController::class, 'ques_edit']);
+Roud::post('quiz/editTools', [QuizController::class, 'editTools']);
+Roud::post('quiz/delete', [QuizController::class, 'delete']);
+Roud::post('quiz/deleteTopic', [QuizController::class, 'deleteTopic']);
+
 
 Roud::get('log/index', [LogController::class, 'index']);
 Roud::post('log/login', [LogController::class, 'login']);
